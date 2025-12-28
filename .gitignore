@@ -1,207 +1,583 @@
-# Byte-compiled / optimized / DLL files
+# general ignore
 __pycache__/
-*.py[codz]
-*$py.class
-
-# C extensions
+.idea
+*.pt
+*.pth
+*.pyth
+*.bin
+*.safetensors
+*.mat
+*.xyz
+*.npy
+*.npz
+*.csv
 *.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
 *.egg
-MANIFEST
+*.mp4
+*.tar
+*.gz
+*.tar.gz
+*.pkl
+*.h5ad
+*.pckl
+*.ckpt
+*.pts
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# ignore extension research models
+Extension_Research_Models/OT_models/OTFusion/cifar_models.zip
+Extension_Research_Models/OT_models/OTFusion/resnet_models.zip
+Extension_Research_Models/OT_models/TransformerFusion/models.zip
+Extension_Research_Models/OT_models/Intra-Fusion/models.zip
+Extension_Research_Models/OT_models/LightSB-Matching/gaussian_mixture_benchmark_data.zip
+Extension_Research_Models/OT_models/EntropicOTBenchmark/notebooks/data_for_plotting/eps_0.1
+Extension_Research_Models/OT_models/EntropicOTBenchmark/notebooks/data_for_plotting/eps_1
+Extension_Research_Models/OT_models/EntropicOTBenchmark/notebooks/data_for_plotting/eps_10
+Extension_Research_Models/RWKV_models/FRWKV/dataset.zip
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# ignore ai cty anomaly detection models
+AICity_AD_Models/CETCVLAB/yolo.h5
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
-.pytest_cache/
-cover/
+# ignore multiple instance learning anomaly detection models
+WSAD_Models/MIL/dataset/UCF-Crime/all_c3d
+WSAD_Models/MIL/dataset/UCF-Crime/all_flows
+WSAD_Models/MIL/dataset/UCF-Crime/all_rgbs
+WSAD_Models/MIL/weight
+WSAD_Models/WSAD/features/SH_Test_ten_crop_i3d
+WSAD_Models/WSAD/features/SH_Train_ten_crop_i3d
+WSAD_Models/WSAD/features/UCF_Train_ten_crop_i3d
+WSAD_Models/WSAD/features/UCF_Test_ten_crop_i3d
+WSAD_Models/WSAD/features/XD_Train_five_crop_i3d
+WSAD_Models/WSAD/features/XD_Test_five_crop_i3d
+WSAD_Models/WSAD/list/list_sh/test_frame_mask
+WSAD_Models/WSAD/features/UCF_Train_ten_i3d
+WSAD_Models/WSAD/features/UCF_Test_ten_i3d
+WSAD_Models/WSAD/list/list_ucf/Matlab_formate
+WSAD_Models/WSAD/features/SH_SwinTransformer_features
+WSAD_Models/WSAD/final_ckpt/MIL/shanghai/best_sh_mil.pkl
+WSAD_Models/WSAD/final_ckpt/MIL/ucf/best_ucf_mil.pkl
+WSAD_Models/WSAD/final_ckpt/MIL/xd/best_xd_mil.pkl
+WSAD_Models/WSAD/final_ckpt/MyModel/shanghai/best_sh_mymodel.pkl
+WSAD_Models/WSAD/final_ckpt/MyModel/ucf/best_ucf_mymodel.pkl
+WSAD_Models/WSAD/final_ckpt/MyModel/xd/best_xd_mymodel.pkl
+WSAD_Models/WSAD/final_ckpt/RTFM/shanghai/best_sh_rtfm.pkl
+WSAD_Models/WSAD/final_ckpt/RTFM/ucf/best_ucf_rtfm.pkl
+WSAD_Models/WSAD/final_ckpt/RTFM/xd/best_xd_rtfm.pkl
+WSAD_Models/WSAD/final_ckpt/WSAL/shanghai/best_sh_wsal.pkl
+WSAD_Models/WSAD/final_ckpt/WSAL/ucf/best_ucf_wsal.pkl
+WSAD_Models/WSAD/final_ckpt/WSAL/xd/best_xd_wsal.pkl
+WSAD_Models/WSAD/final_ckpt/RTFM_SwinTransformer/best_sh_rtfm_swintransformer.pkl
+WSAD_Models/WSAD/final_ckpt/MGFN/shanghai/best_sh_mgfn.pkl
+WSAD_Models/WSAD/final_ckpt/MGFN/ucf/best_ucf_mgfn.pkl
+WSAD_Models/WSAD/final_ckpt/MGFN/xd/best_xd_mgfn.pkl
+WSAD_Models/WSAD_nocrop/features/train_shanghai_i3d
+WSAD_Models/WSAD_nocrop/features/test_shanghai_i3d
+WSAD_Models/WSAD_nocrop/features/train_ucf_i3d
+WSAD_Models/WSAD_nocrop/features/test_ucf_i3d
+WSAD_Models/WSAD_nocrop/i3d-features/RGB
+WSAD_Models/WSAD_nocrop/i3d-features/RGBTest
+WSAD_Models/WSAD_nocrop/vggish-features/train
+WSAD_Models/WSAD_nocrop/vggish-features/test
+WSAD_Models/WSAD_nocrop/train
+WSAD_Models/WSAD_nocrop/test
 
-# Translations
-*.mo
-*.pot
+# ignore feature extraction models
+Feature_Extraction_Models/RGB/I3D_10_crops/samplevideos
+Feature_Extraction_Models/RGB/I3D_10_crops/pretrained/c3d-pretrained.pth
+Feature_Extraction_Models/RGB/I3D_10_crops/pretrained/i3d_r50_kinetics.pth
+Feature_Extraction_Models/RGB/I3D_10_crops/pretrained/pretrained_i3d/flow_imagenet.pt
+Feature_Extraction_Models/RGB/I3D_10_crops/pretrained/pretrained_i3d/rgb_imagenet.pt
+Feature_Extraction_Models/RGB/I3D_10_crops/pretrained/pretrained_i3d/flow_charades.pt
+Feature_Extraction_Models/RGB/I3D_10_crops/pretrained/pretrained_i3d/rgb_charades.pt
+Feature_Extraction_Models/Depth/Depth-Anything-V2/checkpoints
+Feature_Extraction_Models/Text/AlphaCLIP/demo
+Feature_Extraction_Models/Mask/EfficientSAM/weights
+Feature_Extraction_Models/Mask/EfficientSAM/torchscripted_model
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# ignore surveillance anomaly detection models
+Surveillance_AD_Models/TA-NET/TAD-features_uniformerv2-l14-k400@16frames
+Surveillance_AD_Models/TA-NET/UCF-crime-traffic-features_uniformerv2-l14-k400@16frames
 
-# Flask stuff:
-instance/
-.webassets-cache
+# ignore 2D industrial anomaly detection models
+Industrial_AD_Models/2D_models/CDO/old_version/datasets/mvtec
+Industrial_AD_Models/2D_models/CDO/old_version/datasets/btad
+Industrial_AD_Models/2D_models/CDO/old_version/datasets/dtd
+Industrial_AD_Models/2D_models/CDO/old_version/datasets/visa
+Industrial_AD_Models/2D_models/CDO/new_version/datasets/mvtec
+Industrial_AD_Models/2D_models/CDO/new_version/datasets/btad
+Industrial_AD_Models/2D_models/CDO/new_version/datasets/dtd
+Industrial_AD_Models/2D_models/CDO/new_version/datasets/visa
+Industrial_AD_Models/2D_models/CPR/datasets/mvtec
+Industrial_AD_Models/2D_models/CPR/datasets/btad
+Industrial_AD_Models/2D_models/CPR/datasets/dtd
+Industrial_AD_Models/2D_models/CPR/datasets/visa
+Industrial_AD_Models/2D_models/CutPaste/datasets/mvtec
+Industrial_AD_Models/2D_models/CutPaste/datasets/btad
+Industrial_AD_Models/2D_models/CutPaste/datasets/dtd
+Industrial_AD_Models/2D_models/CutPaste/datasets/visa
+Industrial_AD_Models/2D_models/DRAEM/datasets/mvtec
+Industrial_AD_Models/2D_models/DRAEM/datasets/btad
+Industrial_AD_Models/2D_models/DRAEM/datasets/dtd
+Industrial_AD_Models/2D_models/DRAEM/datasets/visa
+Industrial_AD_Models/2D_models/FAIR/datasets/mvtec
+Industrial_AD_Models/2D_models/FAIR/datasets/btad
+Industrial_AD_Models/2D_models/FAIR/datasets/dtd
+Industrial_AD_Models/2D_models/FAIR/datasets/visa
+Industrial_AD_Models/2D_models/FOD/datasets/mvtec
+Industrial_AD_Models/2D_models/FOD/datasets/btad
+Industrial_AD_Models/2D_models/FOD/datasets/dtd
+Industrial_AD_Models/2D_models/FOD/datasets/visa
+Industrial_AD_Models/2D_models/GLASS/All_fg_mask.tar.gz
+Industrial_AD_Models/2D_models/GLASS/datasets/mvtec
+Industrial_AD_Models/2D_models/GLASS/datasets/btad
+Industrial_AD_Models/2D_models/GLASS/datasets/dtd
+Industrial_AD_Models/2D_models/GLASS/datasets/visa
+Industrial_AD_Models/2D_models/PatchSVDD/datasets/mvtec
+Industrial_AD_Models/2D_models/PatchSVDD/datasets/btad
+Industrial_AD_Models/2D_models/PatchSVDD/datasets/dtd
+Industrial_AD_Models/2D_models/PatchSVDD/datasets/visa
+Industrial_AD_Models/2D_models/SegAD/datasets/mvtec
+Industrial_AD_Models/2D_models/SegAD/datasets/btad
+Industrial_AD_Models/2D_models/SegAD/datasets/dtd
+Industrial_AD_Models/2D_models/SegAD/datasets/visa
+Industrial_AD_Models/2D_models/SimpleNet/datasets/mvtec
+Industrial_AD_Models/2D_models/SimpleNet/datasets/btad
+Industrial_AD_Models/2D_models/SimpleNet/datasets/dtd
+Industrial_AD_Models/2D_models/SimpleNet/datasets/visa
+Industrial_AD_Models/2D_models/SPR/datasets/mvtec
+Industrial_AD_Models/2D_models/SPR/datasets/btad
+Industrial_AD_Models/2D_models/SPR/datasets/dtd
+Industrial_AD_Models/2D_models/SPR/datasets/visa
+Industrial_AD_Models/2D_models/SSAPS/datasets/mvtec
+Industrial_AD_Models/2D_models/SSAPS/datasets/btad
+Industrial_AD_Models/2D_models/SSAPS/datasets/dtd
+Industrial_AD_Models/2D_models/SSAPS/datasets/visa
+Industrial_AD_Models/2D_models/FUN-AD/datasets/mvtec
+Industrial_AD_Models/2D_models/FUN-AD/datasets/btad
+Industrial_AD_Models/2D_models/FUN-AD/datasets/dtd
+Industrial_AD_Models/2D_models/FUN-AD/datasets/visa
+Industrial_AD_Models/2D_models/OnlineInReaCh/datasets/mvtec
+Industrial_AD_Models/2D_models/OnlineInReaCh/datasets/btad
+Industrial_AD_Models/2D_models/OnlineInReaCh/datasets/dtd
+Industrial_AD_Models/2D_models/OnlineInReaCh/datasets/visa
+Industrial_AD_Models/2D_models/PBAS/data/mvtec
+Industrial_AD_Models/2D_models/PBAS/data/visa
+Industrial_AD_Models/2D_models/PBAS/data/mpdd
+Industrial_AD_Models/2D_models/InReaCh/datasets/mvtec
+Industrial_AD_Models/2D_models/InReaCh/datasets/btad
+Industrial_AD_Models/2D_models/InReaCh/datasets/dtd
+Industrial_AD_Models/2D_models/InReaCh/datasets/visa
+Industrial_AD_Models/2D_models/REB/datasets/mvtec
+Industrial_AD_Models/2D_models/REB/datasets/mvtec_loco
+Industrial_AD_Models/2D_models/HETMM/datasets/mvtec
+Industrial_AD_Models/2D_models/SuperSimpleNet/mvtec
+Industrial_AD_Models/2D_models/SuperSimpleNet/visa
+Industrial_AD_Models/2D_models/SuperSimpleNet/KolektorSDD2
+Industrial_AD_Models/2D_models/SuperSimpleNet/sensum
 
-# Scrapy stuff:
-.scrapy
+# ignore 3D industrial anomaly detection models
+Industrial_AD_Models/3D_models/BTF/datasets/mvtec_3d
+Industrial_AD_Models/3D_models/BTF/datasets/eyecandies
+Industrial_AD_Models/3D_models/CFM/weights/pointmae_pretrain.pth
+Industrial_AD_Models/3D_models/CFM/datasets/mvtec_3d
+Industrial_AD_Models/3D_models/CFM/datasets/eyecandies
+Industrial_AD_Models/3D_models/CPMF/datasets/mvtec_3d
+Industrial_AD_Models/3D_models/CPMF/datasets/eyecandies
+Industrial_AD_Models/3D_models/Looking3D/datasets/brokenchairs
+Industrial_AD_Models/3D_models/M3DM/datasets/mvtec_3d
+Industrial_AD_Models/3D_models/M3DM/datasets/eyecandies
+Industrial_AD_Models/3D_models/PAD/ckpts
+Industrial_AD_Models/3D_models/PAD/datasets/LEGO-3D
+Industrial_AD_Models/3D_models/PAD/retrieval/model
+Industrial_AD_Models/3D_models/Shape-Guided/datasets/mvtec_3d
+Industrial_AD_Models/3D_models/Shape-Guided/datasets/eyecandies
+Industrial_AD_Models/3D_models/SplatPose/MAD-Sim
+Industrial_AD_Models/3D_models/CMDIAD/datasets/mvtec3d
+Industrial_AD_Models/3D_models/MulSen-AD/datasets/MulSen_AD
+Industrial_AD_Models/3D_models/FPFHI/datasets/infra_3DALv2
+Industrial_AD_Models/3D_models/EasyNet/datasets/mvtec3d
+Industrial_AD_Models/3D_models/EasyNet/datasets/eyecandies
+Industrial_AD_Models/3D_models/Real3D-AD/datasets/Real3D-AD-PCD
+Industrial_AD_Models/3D_models/3DSR/datasets/mvtec_3d
+Industrial_AD_Models/3D_models/3DSR/datasets/imagenet
+Industrial_AD_Models/3D_models/PO3AD/datasets/AnomalyShapeNet/dataset
+Industrial_AD_Models/3D_models/PO3AD/datasets/Real3D/Real3D-AD-PLY
+Industrial_AD_Models/3D_models/PO3AD/datasets/Real3D/Real3D-AD-PCD
+Industrial_AD_Models/3D_models/MC4AD/datasets/AnomalyShapeNet/dataset
 
-# Sphinx documentation
-docs/_build/
+# ignore industrial anomaly generative models
+Industrial_AD_Models/Anomaly_generative_models/Defect_Spectrum/datasets/mvtec
+Industrial_AD_Models/Anomaly_generative_models/Defect_Spectrum/datasets/btad
+Industrial_AD_Models/Anomaly_generative_models/Defect_Spectrum/datasets/dtd
+Industrial_AD_Models/Anomaly_generative_models/Defect_Spectrum/datasets/visa
+Industrial_AD_Models/Anomaly_generative_models/DualAnoDiff/datasets/mvtec
+Industrial_AD_Models/Anomaly_generative_models/MAGIC/datasets/mvtec
+Industrial_AD_Models/Anomaly_generative_models/SeaS/data/mvtec
+Industrial_AD_Models/Anomaly_generative_models/SeaS/data/visa
+Industrial_AD_Models/Anomaly_generative_models/SeaS/data/mvtec3d
 
-# PyBuilder
-.pybuilder/
-target/
+# ignore diffusion industrial anomaly detection models
+Industrial_AD_Models/Diffusion_models/AnoDDPM/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/AnoDDPM/datasets/btad
+Industrial_AD_Models/Diffusion_models/AnoDDPM/datasets/dtd
+Industrial_AD_Models/Diffusion_models/AnoDDPM/datasets/visa
+Industrial_AD_Models/Diffusion_models/D3AD/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/D3AD/datasets/btad
+Industrial_AD_Models/Diffusion_models/D3AD/datasets/dtd
+Industrial_AD_Models/Diffusion_models/D3AD/datasets/visa
+Industrial_AD_Models/Diffusion_models/DDAD/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/DDAD/datasets/btad
+Industrial_AD_Models/Diffusion_models/DDAD/datasets/dtd
+Industrial_AD_Models/Diffusion_models/DDAD/datasets/visa
+Industrial_AD_Models/Diffusion_models/DiAD/datasets/mvtec/mvtec
+Industrial_AD_Models/Diffusion_models/DiAD/datasets/btad/btad
+Industrial_AD_Models/Diffusion_models/DiAD/datasets/dtd/dtd
+Industrial_AD_Models/Diffusion_models/DiAD/datasets/visa/visa
+Industrial_AD_Models/Diffusion_models/DiAD/datasets/mvtec_3d/mvtec_3d
+Industrial_AD_Models/Diffusion_models/DiffAD/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/DiffAD/datasets/btad
+Industrial_AD_Models/Diffusion_models/DiffAD/datasets/dtd
+Industrial_AD_Models/Diffusion_models/DiffAD/datasets/visa
+Industrial_AD_Models/Diffusion_models/DiffusionAD/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/DiffusionAD/datasets/btad
+Industrial_AD_Models/Diffusion_models/DiffusionAD/datasets/dtd
+Industrial_AD_Models/Diffusion_models/DiffusionAD/datasets/visa
+Industrial_AD_Models/Diffusion_models/DiffusionAD/datasets/mpdd
+Industrial_AD_Models/Diffusion_models/GLAD/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/GLAD/dataset/btad
+Industrial_AD_Models/Diffusion_models/GLAD/dataset/dtd
+Industrial_AD_Models/Diffusion_models/GLAD/datasets/mpdd
+Industrial_AD_Models/Diffusion_models/GLAD/dataset/visa
+Industrial_AD_Models/Diffusion_models/GLAD/CompVis/stable-diffusion-v1-4
+Industrial_AD_Models/Diffusion_models/RealNet/data/mvtec/mvtec
+Industrial_AD_Models/Diffusion_models/RealNet/data/btad/btad
+Industrial_AD_Models/Diffusion_models/RealNet/data/mpdd/mpdd
+Industrial_AD_Models/Diffusion_models/RealNet/data/visa/visa
+Industrial_AD_Models/Diffusion_models/AnomalyDiffusion/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/AnomalyDiffusion/datasets/btad
+Industrial_AD_Models/Diffusion_models/AnomalyDiffusion/datasets/dtd
+Industrial_AD_Models/Diffusion_models/AnomalyDiffusion/datasets/visa
+Industrial_AD_Models/Diffusion_models/AnomalyDiffusion/datasets/generated_dataset
+Industrial_AD_Models/Diffusion_models/TransFusion/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/TransFusion/datasets/btad
+Industrial_AD_Models/Diffusion_models/TransFusion/datasets/dtd
+Industrial_AD_Models/Diffusion_models/TransFusion/datasets/visa
+Industrial_AD_Models/Diffusion_models/TransFusion/datasets/mvtec3d
+Industrial_AD_Models/Diffusion_models/AnoGen/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/AnoGen/datasets/btad
+Industrial_AD_Models/Diffusion_models/AnoGen/datasets/dtd
+Industrial_AD_Models/Diffusion_models/AnoGen/datasets/visa
+Industrial_AD_Models/Diffusion_models/InversionAD/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/MDPS/datasets/mvtec
+Industrial_AD_Models/Diffusion_models/MDPS/datasets/btad
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# ignore knowledge distillation industrial anomaly detection models
+Industrial_AD_Models/KD_models/DeSTSeg/datasets/mvtec
+Industrial_AD_Models/KD_models/DeSTSeg/datasets/btad
+Industrial_AD_Models/KD_models/DeSTSeg/datasets/dtd
+Industrial_AD_Models/KD_models/DeSTSeg/datasets/visa
+Industrial_AD_Models/KD_models/DMAD/datasets/mvtec
+Industrial_AD_Models/KD_models/DMAD/datasets/btad
+Industrial_AD_Models/KD_models/DMAD/datasets/dtd
+Industrial_AD_Models/KD_models/DMAD/datasets/visa
+Industrial_AD_Models/KD_models/EfficientAD/datasets/mvtec
+Industrial_AD_Models/KD_models/EfficientAD/datasets/btad
+Industrial_AD_Models/KD_models/EfficientAD/datasets/dtd
+Industrial_AD_Models/KD_models/EfficientAD/datasets/visa
+Industrial_AD_Models/KD_models/EfficientAD/datasets/imagenet
+Industrial_AD_Models/KD_models/IKD/datasets/mvtec
+Industrial_AD_Models/KD_models/IKD/datasets/btad
+Industrial_AD_Models/KD_models/IKD/datasets/dtd
+Industrial_AD_Models/KD_models/IKD/datasets/visa
+Industrial_AD_Models/KD_models/MemKD/datasets/mvtec
+Industrial_AD_Models/KD_models/MemKD/datasets/btad
+Industrial_AD_Models/KD_models/MemKD/datasets/dtd
+Industrial_AD_Models/KD_models/MemKD/datasets/visa
+Industrial_AD_Models/KD_models/MixedTeacher/datasets/mvtec
+Industrial_AD_Models/KD_models/MixedTeacher/datasets/btad
+Industrial_AD_Models/KD_models/MixedTeacher/datasets/dtd
+Industrial_AD_Models/KD_models/MixedTeacher/datasets/visa
+Industrial_AD_Models/KD_models/MKD/datasets/mvtec
+Industrial_AD_Models/KD_models/MKD/datasets/btad
+Industrial_AD_Models/KD_models/MKD/datasets/dtd
+Industrial_AD_Models/KD_models/MKD/datasets/visa
+Industrial_AD_Models/KD_models/RD/datasets/mvtec
+Industrial_AD_Models/KD_models/RD/datasets/btad
+Industrial_AD_Models/KD_models/RD/datasets/dtd
+Industrial_AD_Models/KD_models/RD/datasets/visa
+Industrial_AD_Models/KD_models/RD++/datasets/mvtec
+Industrial_AD_Models/KD_models/RD++/datasets/btad
+Industrial_AD_Models/KD_models/RD++/datasets/dtd
+Industrial_AD_Models/KD_models/RD++/datasets/visa
+Industrial_AD_Models/KD_models/STFPM/datasets/mvtec
+Industrial_AD_Models/KD_models/STFPM/datasets/btad
+Industrial_AD_Models/KD_models/STFPM/datasets/dtd
+Industrial_AD_Models/KD_models/STFPM/datasets/visa
+Industrial_AD_Models/KD_models/DAF/datasets/mvtec
+Industrial_AD_Models/KD_models/DAF/datasets/btad
+Industrial_AD_Models/KD_models/DAF/datasets/dtd
+Industrial_AD_Models/KD_models/DAF/datasets/visa
+Industrial_AD_Models/KD_models/URD/datasets/mvtec
+Industrial_AD_Models/KD_models/URD/datasets/btad
+Industrial_AD_Models/KD_models/URD/datasets/visa
+Industrial_AD_Models/KD_models/URD/datasets/dtd
+Industrial_AD_Models/KD_models/3CAD/datasets/3CAD
+Industrial_AD_Models/KD_models/3CAD/datasets/mvtec
+Industrial_AD_Models/KD_models/ReContrast/datasets/mvtec
+Industrial_AD_Models/KD_models/ReContrast/datasets/visa
+Industrial_AD_Models/KD_models/ReContrast/datasets/aptos
+Industrial_AD_Models/KD_models/ReContrast/datasets/OCT2017
+Industrial_AD_Models/KD_models/ReContrast/datasets/ISIC2018
+Industrial_AD_Models/KD_models/SK-RD4AD/datasets/mvtec
+Industrial_AD_Models/KD_models/SK-RD4AD/datasets/visa
+Industrial_AD_Models/KD_models/SK-RD4AD/datasets/vad
 
-# IPython
-profile_default/
-ipython_config.py
+# ignore memory bank industrial anomaly detection models
+Industrial_AD_Models/Memory_bank_models/CFA/datasets/mvtec
+Industrial_AD_Models/Memory_bank_models/CFA/datasets/btad
+Industrial_AD_Models/Memory_bank_models/CFA/datasets/dtd
+Industrial_AD_Models/Memory_bank_models/CFA/datasets/visa
+Industrial_AD_Models/Memory_bank_models/MemSeg/datasets/mvtec
+Industrial_AD_Models/Memory_bank_models/MemSeg/datasets/btad
+Industrial_AD_Models/Memory_bank_models/MemSeg/datasets/dtd
+Industrial_AD_Models/Memory_bank_models/MemSeg/datasets/visa
+Industrial_AD_Models/Memory_bank_models/PaDiM/datasets/mvtec
+Industrial_AD_Models/Memory_bank_models/PaDiM/datasets/btad
+Industrial_AD_Models/Memory_bank_models/PaDiM/datasets/dtd
+Industrial_AD_Models/Memory_bank_models/PaDiM/datasets/visa
+Industrial_AD_Models/Memory_bank_models/PatchCore/datasets/mvtec
+Industrial_AD_Models/Memory_bank_models/PatchCore/datasets/btad
+Industrial_AD_Models/Memory_bank_models/PatchCore/datasets/dtd
+Industrial_AD_Models/Memory_bank_models/PatchCore/datasets/visa
+Industrial_AD_Models/Memory_bank_models/SPADE/datasets/mvtec
+Industrial_AD_Models/Memory_bank_models/SPADE/datasets/btad
+Industrial_AD_Models/Memory_bank_models/SPADE/datasets/dtd
+Industrial_AD_Models/Memory_bank_models/SPADE/datasets/visa
+Industrial_AD_Models/Memory_bank_models/SFRAD/datasets/mvtec
 
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
+# ignore multi-class industial anomaly detection models
+Industrial_AD_Models/Multi_class_models/CRAD/data/mvtec/mvtec
+Industrial_AD_Models/Multi_class_models/CRAD/data/btad/btad
+Industrial_AD_Models/Multi_class_models/CRAD/data/dtd/dtd
+Industrial_AD_Models/Multi_class_models/CRAD/data/visa/visa
+Industrial_AD_Models/Multi_class_models/Real-IAD/data/mvtec
+Industrial_AD_Models/Multi_class_models/Real-IAD/data/btad
+Industrial_AD_Models/Multi_class_models/Real-IAD/data/dtd
+Industrial_AD_Models/Multi_class_models/Real-IAD/data/visa
+Industrial_AD_Models/Multi_class_models/UniAD/data/mvtec
+Industrial_AD_Models/Multi_class_models/UniAD/data/btad
+Industrial_AD_Models/Multi_class_models/UniAD/data/dtd
+Industrial_AD_Models/Multi_class_models/UniAD/data/visa
+Industrial_AD_Models/Multi_class_models/HVQ/data/mvtec/mvtec
+Industrial_AD_Models/Multi_class_models/HVQ/data/btad/btad
+Industrial_AD_Models/Multi_class_models/HVQ/data/dtd/dtd
+Industrial_AD_Models/Multi_class_models/HVQ/data/visa/visa
+Industrial_AD_Models/Multi_class_models/MSTAD/data/mvtec/mvtec
+Industrial_AD_Models/Multi_class_models/MSTAD/data/btad/btad
+Industrial_AD_Models/Multi_class_models/MSTAD/data/dtd/dtd
+Industrial_AD_Models/Multi_class_models/MSTAD/data/visa/visa
+Industrial_AD_Models/Multi_class_models/MambaAD/data/mvtec
+Industrial_AD_Models/Multi_class_models/MambaAD/data/btad
+Industrial_AD_Models/Multi_class_models/MambaAD/data/dtd
+Industrial_AD_Models/Multi_class_models/MambaAD/data/visa
+Industrial_AD_Models/Multi_class_models/MambaAD/data/mvtec3d
+Industrial_AD_Models/Multi_class_models/ViTAD/data/mvtec
+Industrial_AD_Models/Multi_class_models/ViTAD/data/btad
+Industrial_AD_Models/Multi_class_models/ViTAD/data/dtd
+Industrial_AD_Models/Multi_class_models/ViTAD/data/visa
+Industrial_AD_Models/Multi_class_models/ViTAD/data/mvtec3d
+Industrial_AD_Models/Multi_class_models/InvAD/data/mvtec
+Industrial_AD_Models/Multi_class_models/InvAD/data/btad
+Industrial_AD_Models/Multi_class_models/InvAD/data/dtd
+Industrial_AD_Models/Multi_class_models/InvAD/data/visa
+Industrial_AD_Models/Multi_class_models/InvAD/data/mvtec3d
+Industrial_AD_Models/Multi_class_models/Dinomaly/datasets/mvtec
+Industrial_AD_Models/Multi_class_models/Dinomaly/datasets/btad
+Industrial_AD_Models/Multi_class_models/Dinomaly/datasets/dtd
+Industrial_AD_Models/Multi_class_models/Dinomaly/datasets/visa
+Industrial_AD_Models/Multi_class_models/Dinomaly/datasets/realiad
+Industrial_AD_Models/Multi_class_models/RLR/data/mvtec
+Industrial_AD_Models/Multi_class_models/RLR/data/btad
+Industrial_AD_Models/Multi_class_models/RLR/data/dtd
+Industrial_AD_Models/Multi_class_models/RLR/data/visa
+Industrial_AD_Models/Multi_class_models/UniFormaly/data/mvtec
+Industrial_AD_Models/Multi_class_models/UniFormaly/data/mvtec_all
+Industrial_AD_Models/Multi_class_models/UniFormaly/data/btad
+Industrial_AD_Models/Multi_class_models/UniFormaly/data/dtd
+Industrial_AD_Models/Multi_class_models/UniFormaly/data/visa
+Industrial_AD_Models/Multi_class_models/OneNIP/data/mvtec/mvtec
+Industrial_AD_Models/Multi_class_models/OneNIP/data/btad/btad
+Industrial_AD_Models/Multi_class_models/OneNIP/data/dtd/dtd
+Industrial_AD_Models/Multi_class_models/OneNIP/data/visa/visa
+Industrial_AD_Models/Multi_class_models/IUF/data/mvtec/mvtec_anomaly_detection
+Industrial_AD_Models/Multi_class_models/IUF/data/btad/btad
+Industrial_AD_Models/Multi_class_models/IUF/data/dtd/dtd
+Industrial_AD_Models/Multi_class_models/IUF/data/visa/Data
+Industrial_AD_Models/Multi_class_models/PMAD/data/mvtec
+Industrial_AD_Models/Multi_class_models/UniAS/data/MVTec-AD/mvtec
+Industrial_AD_Models/Multi_class_models/UniAS/data/VisA/visa
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+# ignore noisy industrial anomaly detection models
+Industrial_AD_Models/Noisy_models/SoftPatch/datasets/mvtec
+Industrial_AD_Models/Noisy_models/SoftPatch/datasets/btad
+Industrial_AD_Models/Noisy_models/SoftPatch/datasets/dtd
+Industrial_AD_Models/Noisy_models/SoftPatch/datasets/visa
 
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
+# ignore normalizing flows industrial anomaly detection models
+Industrial_AD_Models/Normalizing_flows_models/AST/datasets/mvtec
+Industrial_AD_Models/Normalizing_flows_models/AST/datasets/btad
+Industrial_AD_Models/Normalizing_flows_models/AST/datasets/dtd
+Industrial_AD_Models/Normalizing_flows_models/AST/datasets/visa
+Industrial_AD_Models/Normalizing_flows_models/AST/datasets/mvtec3d
+Industrial_AD_Models/Normalizing_flows_models/BGAD/datasets/mvtec
+Industrial_AD_Models/Normalizing_flows_models/BGAD/datasets/btad
+Industrial_AD_Models/Normalizing_flows_models/BGAD/datasets/dtd
+Industrial_AD_Models/Normalizing_flows_models/BGAD/datasets/visa
+Industrial_AD_Models/Normalizing_flows_models/CFLOW-AD/datasets/mvtec
+Industrial_AD_Models/Normalizing_flows_models/CFLOW-AD/datasets/btad
+Industrial_AD_Models/Normalizing_flows_models/CFLOW-AD/datasets/dtd
+Industrial_AD_Models/Normalizing_flows_models/CFLOW-AD/datasets/visa
+Industrial_AD_Models/Normalizing_flows_models/DifferNet/datasets/mvtec
+Industrial_AD_Models/Normalizing_flows_models/DifferNet/datasets/btad
+Industrial_AD_Models/Normalizing_flows_models/DifferNet/datasets/dtd
+Industrial_AD_Models/Normalizing_flows_models/DifferNet/datasets/visa
+Industrial_AD_Models/Normalizing_flows_models/HGAD/datasets/mvtec
+Industrial_AD_Models/Normalizing_flows_models/HGAD/datasets/btad
+Industrial_AD_Models/Normalizing_flows_models/HGAD/datasets/dtd
+Industrial_AD_Models/Normalizing_flows_models/HGAD/datasets/visa
+Industrial_AD_Models/Normalizing_flows_models/HGAD/datasets/mvtec_3d
+Industrial_AD_Models/Normalizing_flows_models/msflow/datasets/mvtec
+Industrial_AD_Models/Normalizing_flows_models/msflow/datasets/btad
+Industrial_AD_Models/Normalizing_flows_models/msflow/datasets/dtd
+Industrial_AD_Models/Normalizing_flows_models/msflow/datasets/visa
+Industrial_AD_Models/Normalizing_flows_models/PyramidFlow/datasets/mvtec
+Industrial_AD_Models/Normalizing_flows_models/PyramidFlow/datasets/btad
+Industrial_AD_Models/Normalizing_flows_models/PyramidFlow/datasets/dtd
+Industrial_AD_Models/Normalizing_flows_models/PyramidFlow/datasets/visa
+Industrial_AD_Models/Normalizing_flows_models/DADF/datasets/mvtec_loco
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-#poetry.toml
+# ignore out-of-distribution industial anomaly detection models
+Industrial_AD_Models/OOD_models/GeneralAD/datasets/mvtec
+Industrial_AD_Models/OOD_models/GeneralAD/datasets/btad
+Industrial_AD_Models/OOD_models/GeneralAD/datasets/dtd
+Industrial_AD_Models/OOD_models/GeneralAD/datasets/visa
+Industrial_AD_Models/OOD_models/ADShift/datasets/mvtec
+Industrial_AD_Models/OOD_models/ADShift/datasets/btad
+Industrial_AD_Models/OOD_models/ADShift/datasets/dtd
+Industrial_AD_Models/OOD_models/ADShift/datasets/visa
+Industrial_AD_Models/OOD_models/CKAAD/datasets/ChestXRay2017
+Industrial_AD_Models/OOD_models/CKAAD/datasets/OCT2017
+Industrial_AD_Models/OOD_models/CKAAD/datasets/ISIC2018
+Industrial_AD_Models/OOD_models/CKAAD/datasets/Br35H
+Industrial_AD_Models/OOD_models/CKAAD/datasets/mvtec
+Industrial_AD_Models/OOD_models/CKAAD/datasets/visa
 
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-#pdm.lock
-#pdm.toml
-.pdm-python
-.pdm-build/
+# ignore SAM industial anomaly detection models
+Industrial_AD_Models/SAM_models/UCAD/datasets/mvtec
+Industrial_AD_Models/SAM_models/UCAD/datasets/btad
+Industrial_AD_Models/SAM_models/UCAD/datasets/dtd
+Industrial_AD_Models/SAM_models/UCAD/datasets/visa
 
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-#pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi
+# ignore supervised industrial anomaly detection models
+Industrial_AD_Models/Supervised_models/PRNet/datasets/mvtec
+Industrial_AD_Models/Supervised_models/PRNet/datasets/btad
+Industrial_AD_Models/Supervised_models/PRNet/datasets/dtd
+Industrial_AD_Models/Supervised_models/PRNet/datasets/visa
+Industrial_AD_Models/Supervised_models/DevNet/datasets/mvtec
+Industrial_AD_Models/Supervised_models/DevNet/datasets/btad
+Industrial_AD_Models/Supervised_models/DevNet/datasets/dtd
+Industrial_AD_Models/Supervised_models/DevNet/datasets/visa
+Industrial_AD_Models/Supervised_models/DRA/datasets/mvtec
+Industrial_AD_Models/Supervised_models/DRA/datasets/btad
+Industrial_AD_Models/Supervised_models/DRA/datasets/dtd
+Industrial_AD_Models/Supervised_models/DRA/datasets/visa
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
+# ignore low-shot industial anomaly detection models
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version1/datasets/mvtec
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version1/datasets/btad
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version1/datasets/dtd
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version1/datasets/visa
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version2/datasets/mvtec
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version2/datasets/btad
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version2/datasets/dtd
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version2/datasets/visa
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version3/data/mvtec
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version3/data/btad
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version3/data/dtd
+Industrial_AD_Models/Low_shot_models/WinCLIP/WinCLIP_version3/data/visa
+Industrial_AD_Models/Low_shot_models/PromptAD/data/mvtec
+Industrial_AD_Models/Low_shot_models/PromptAD/data/btad
+Industrial_AD_Models/Low_shot_models/PromptAD/data/dtd
+Industrial_AD_Models/Low_shot_models/PromptAD/data/visa
+Industrial_AD_Models/Low_shot_models/InCTRL/data/mvtec
+Industrial_AD_Models/Low_shot_models/InCTRL/data/btad
+Industrial_AD_Models/Low_shot_models/InCTRL/data/dtd
+Industrial_AD_Models/Low_shot_models/InCTRL/data/visa
+Industrial_AD_Models/Low_shot_models/InCTRL/data/elpv
+Industrial_AD_Models/Low_shot_models/InCTRL/data/sdd
+Industrial_AD_Models/Low_shot_models/InCTRL/data/aitex
+Industrial_AD_Models/Low_shot_models/InCTRL/data/brain_mri
+Industrial_AD_Models/Low_shot_models/InCTRL/data/headct
+Industrial_AD_Models/Low_shot_models/AnomalyCLIP/datasets/mvtec
+Industrial_AD_Models/Low_shot_models/AnomalyCLIP/datasets/btad
+Industrial_AD_Models/Low_shot_models/AnomalyCLIP/datasets/dtd
+Industrial_AD_Models/Low_shot_models/AnomalyCLIP/datasets/visa
+Industrial_AD_Models/Low_shot_models/APRIL-GAN/data/mvtec
+Industrial_AD_Models/Low_shot_models/APRIL-GAN/data/btad
+Industrial_AD_Models/Low_shot_models/APRIL-GAN/data/dtd
+Industrial_AD_Models/Low_shot_models/APRIL-GAN/data/visa
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/mvtec
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/btad
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/dtd
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/visa
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/mpdd
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/sdd
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/dagm
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/head_ct
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/brain_mri
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/br35h
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/isic
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/colon_db
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/clinic_db
+Industrial_AD_Models/Low_shot_models/AdaCLIP/datasets/tn3k
+Industrial_AD_Models/Low_shot_models/PointAD/datasets/mvtec3d
+Industrial_AD_Models/Low_shot_models/PointAD/datasets/Real3D-AD-PCD
+Industrial_AD_Models/Low_shot_models/PointAD/datasets/eyecandies
+Industrial_AD_Models/Low_shot_models/AMI-Net/data/mvtec
+Industrial_AD_Models/Low_shot_models/AMI-Net/data/btad
+Industrial_AD_Models/Low_shot_models/AMI-Net/data/dtd
+Industrial_AD_Models/Low_shot_models/ResAD/data/mvtec
+Industrial_AD_Models/Low_shot_models/ResAD/data/btad
+Industrial_AD_Models/Low_shot_models/ResAD/data/visa
+Industrial_AD_Models/Low_shot_models/ResAD/data/mvtec3d
+Industrial_AD_Models/Low_shot_models/MVP-PCLIP/datasets/mvtec3d
+Industrial_AD_Models/Low_shot_models/MVP-PCLIP/datasets/Real3D-AD-PCD
+Industrial_AD_Models/Low_shot_models/VCP-CLIP/datasets/mvtec
+Industrial_AD_Models/Low_shot_models/VCP-CLIP/datasets/visa
+Industrial_AD_Models/Low_shot_models/AnoVL/datasets/mvtec
+Industrial_AD_Models/Low_shot_models/AnoVL/datasets/visa
+Industrial_AD_Models/Low_shot_models/MVREC/datasets/MVTec-FS
+Industrial_AD_Models/Low_shot_models/Segment-Any-Anomaly/data/mvtec
+Industrial_AD_Models/Low_shot_models/Segment-Any-Anomaly/data/visa
+Industrial_AD_Models/Low_shot_models/Segment-Any-Anomaly/data/KolektorSDD2
+Industrial_AD_Models/Low_shot_models/Segment-Any-Anomaly/data/Magnetic-tile-defect
+Industrial_AD_Models/Low_shot_models/CLIP-AD/datasets/mvtec
+Industrial_AD_Models/Low_shot_models/CLIP-AD/datasets/visa
+Industrial_AD_Models/Low_shot_models/CLIP-AD/datasets/isic
+Industrial_AD_Models/Low_shot_models/CLIP-AD/datasets/cvc_clinicdb
+Industrial_AD_Models/Low_shot_models/CLIP-AD/datasets/headct
+Industrial_AD_Models/Low_shot_models/CLIP-AD/datasets/brainmri
+Industrial_AD_Models/Low_shot_models/GPT-4V/mvtec
+Industrial_AD_Models/Low_shot_models/GPT-4V/visa
+Industrial_AD_Models/Low_shot_models/FADE/data/mvtec
+Industrial_AD_Models/Low_shot_models/FADE/data/visa
+Industrial_AD_Models/Low_shot_models/AnomalyDINO/datasets/mvtec
+Industrial_AD_Models/Low_shot_models/AnomalyDINO/datasets/visa
+Industrial_AD_Models/Low_shot_models/FiLo/data/mvtec
+Industrial_AD_Models/Low_shot_models/FiLo/data/visa
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.envrc
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
-
-# Abstra
-# Abstra is an AI-powered process automation framework.
-# Ignore directories containing user credentials, local state, and settings.
-# Learn more at https://abstra.io/docs
-.abstra/
-
-# Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
-
-# Ruff stuff:
-.ruff_cache/
-
-# PyPI configuration file
-.pypirc
-
-# Cursor
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
-.cursorignore
-.cursorindexingignore
-
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+# ignore LLM anomaly detection models
+Industrial_AD_Models/LLM_models/AnomalyGPT/data/images
+Industrial_AD_Models/LLM_models/AnomalyGPT/data/mvtec_anomaly_detection
+Industrial_AD_Models/LLM_models/AnomalyGPT/data/VisA
+Industrial_AD_Models/LLM_models/KAG-prompt/datasets/mvtec
+Industrial_AD_Models/LLM_models/KAG-prompt/datasets/visa
