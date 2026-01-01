@@ -1,0 +1,1 @@
+python src/eval.py model=anomaly_clip_ucfcrime data=ucfcrime ckpt_path=checkpoints/ucfcrime/last.ckpt

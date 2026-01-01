@@ -1,0 +1,1 @@
+python src/eval.py model=anomaly_clip_shanghaitech data=shanghaitech ckpt_path=checkpoints/shanghaitech/last.ckpt
