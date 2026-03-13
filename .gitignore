@@ -22,6 +22,9 @@ __pycache__/
 *.pckl
 *.ckpt
 *.pts
+*.DS_Store
+*.rrd
+*.ruff_cache
 
 # ignore extension research models
 Extension_Research_Models/OT_models/OTFusion/cifar_models.zip

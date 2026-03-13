@@ -3,6 +3,7 @@
 # find . -name __pycache__ -type d -exec rm -rf {} \;
 # find . -name git -type d -exec rm -rf {} \;
 # find . -name gitignore -type d -exec rm -rf {} \;
+# find . -name .idea -type d -exec rm -rf {} \;
 sudo rm -rf /tmp/*
 sudo apt-get autoremove -y
 sudo apt-get autoclean -y
