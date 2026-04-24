@@ -1,0 +1,3 @@
+pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install cython ninja pip==22.0 setuptools==59.5.0
+pip install -r requirements.txt
