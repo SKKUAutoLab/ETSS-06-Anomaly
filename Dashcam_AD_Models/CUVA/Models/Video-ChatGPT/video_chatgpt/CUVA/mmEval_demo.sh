@@ -1,0 +1,1 @@
+python mmEval_demo.py --model-name "../../../../ckpts/LLaVA-7B-Lightening-v1-1" --vision_tower_path "../../../../ckpts//clip-vit-large-patch14" --projection_path "../../../../ckpts/video_chatgpt-7B.bin" --video_dir_path "../../../../datasets/CUVA/group_0/00001.mp4" --task "Des" --gpu_id 0 --mod 0

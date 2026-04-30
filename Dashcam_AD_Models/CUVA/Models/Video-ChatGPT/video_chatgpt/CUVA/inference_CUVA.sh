@@ -1,0 +1,1 @@
+python inference_CUVA.py --model-name "../../../../ckpts/LLaVA-7B-Lightening-v1-1" --vision_tower_path "../../../../ckpts/clip-vit-large-patch14" --projection_path "../../../../ckpts/video_chatgpt-7B.bin" --gpu_id 0 --mod 0
