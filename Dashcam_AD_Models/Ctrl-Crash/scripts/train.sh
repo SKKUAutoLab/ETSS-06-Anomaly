@@ -1,0 +1,2 @@
+# bash scripts/mmau_train_video_diffusion_multigpu.sh
+bash scripts/controlnet_train_action_multigpu.sh
