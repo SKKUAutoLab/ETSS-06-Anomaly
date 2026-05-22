@@ -1,0 +1,1 @@
+python train.py --dataset-root dataset --train-metadata dataset/metadata-train-real.csv --val-metadata dataset/metadata-test-real.csv --output-dir rfdetr_real_ckpt --variant large --epochs 100 --batch-size 32 --grad-accum-steps 1 --val-interval 5 --num-workers 8 --lr 1e-5

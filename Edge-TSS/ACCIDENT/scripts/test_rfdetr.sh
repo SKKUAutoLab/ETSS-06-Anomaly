@@ -1,0 +1,1 @@
+python test.py --dataset-root dataset --metadata dataset/metadata-test-real.csv --train-metadata dataset/metadata-train-real.csv --checkpoint-dir rfdetr_real_ckpt --output-dir rfdetr_real_test --variant large --submission-name submission.csv --max-frames-per-video 120 --threshold 0.25
