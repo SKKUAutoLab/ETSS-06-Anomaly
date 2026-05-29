@@ -196,10 +196,14 @@ For the CrashChat dataset, please download it from this [repository](https://git
 
 For the AV-TAU dataset, please download it from this [repository](https://github.com/HarryHsing/EchoTraffic)
 
+For the nexar-collision-prediction dataset, please download it from this [link](https://www.kaggle.com/competitions/nexar-collision-prediction)
+
 ### 2.5. Surveillance Traffic Anomaly Detection Datasets
 For the TUMTrafficQA dataset, please download it from this [repository](https://github.com/TraffiX-VideoQA/TraffiX-Qwen)
 
 For the WWC dataset, please download it from this [repository](https://github.com/VICA-Lab-HKUST-GZ/WWC-Predictor)
+
+For the ACCIDENT dataset, please download it from this [link](https://www.kaggle.com/datasets/picekl/accident)
 
 ## 3. Usage
 ### 3.1.1. Supported Models for 2D Industrial Anomaly Detection
@@ -254,45 +258,48 @@ For the WWC dataset, please download it from this [repository](https://github.co
 | FSR            | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :x:                 | :x:                |
  
 ### 3.1.2. Supported Models for 3D Industrial Anomaly Detection
-| Models        | MVTec3D            | Eyecandies         | MadSim             | Anomaly-ShapNet    | Real3D-AD          | BrokenChairs | PD-Real | MulSen-AD          | infra 3DALv2       | MIP                | ToysAD-8K          |
-|---------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------|---------|--------------------|--------------------|--------------------|--------------------|
-| BTF           | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| CFM           | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| CPMF          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| Looking3D     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| M3DM          | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| PAD           | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| Shape-Guided  | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| SplatPose     | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| CRD           | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| CMDIAD        | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| MulSen-AD     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :heavy_check_mark: | :x:                | :x:                | :x:                |
-| FPFHI         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :heavy_check_mark: | :x:                | :x:                |
-| EasyNet       | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| Real3D-AD     | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| 3DSR          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| PO3AD         | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| MC4AD         | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| R3D-AD        | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| C3DAD         | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :heavy_check_mark: | :x:                | :x:                | :x:                |
-| Reg2Inv       | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| MVR           | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| MC3D-AD       | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| PIAD          | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :heavy_check_mark: | :x:                |
-| GLFM          | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| ISMP          | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| SplatPosePlus | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| CIF           | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| PASDF         | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| RIF           | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| CASL          | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| Odd-One-Out   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :heavy_check_mark: |
-| BridgeNet     | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| GS-CLIP       | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| CMDR-IAD      | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| BTP-3DAD      | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| FIND          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
-| CM3D-AD       | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| Models                 | MVTec3D            | Eyecandies         | MadSim             | Anomaly-ShapNet    | Real3D-AD          | BrokenChairs | PD-Real | MulSen-AD          | infra 3DALv2       | MIP                | ToysAD-8K          |
+|------------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------|---------|--------------------|--------------------|--------------------|--------------------|
+| BTF                    | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| CFM                    | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| CPMF                   | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| Looking3D              | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| M3DM                   | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| PAD                    | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| Shape-Guided           | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| SplatPose              | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| CRD                    | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| CMDIAD                 | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| MulSen-AD              | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| FPFHI                  | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| EasyNet                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| Real3D-AD              | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| 3DSR                   | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| PO3AD                  | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| MC4AD                  | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| R3D-AD                 | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| C3DAD                  | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| Reg2Inv                | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| MVR                    | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| MC3D-AD                | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| PIAD                   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :heavy_check_mark: | :x:                |
+| GLFM                   | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| ISMP                   | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| SplatPosePlus          | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| CIF                    | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| PASDF                  | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| RIF                    | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| CASL                   | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| Odd-One-Out            | :x:                | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :heavy_check_mark: |
+| BridgeNet              | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| GS-CLIP                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| CMDR-IAD               | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| BTP-3DAD               | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| FIND                   | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| CM3D-AD                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| MuSc-V2                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| Shape-Anomaly-Codebook | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| IB-IUMAD               | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
 
 ### 3.1.3. Supported Models for Anomaly Generative Industrial Anomaly Detection
 | Models          | MVTec              | BTAD               | VisA               | MVTec LOCO | MPDD               | WFDD | Real-IAD | MVTec3D            |
@@ -371,6 +378,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
 | SFRAD        | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:  | :x:  | :x:      | :x:     |
 | SA-PatchCore | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:  | :x:  | :x:      | :x:     |
 | RAD          | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:        | :x:  | :x:  | :x:      | :x:     |
+| RAID         | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:        | :x:  | :x:  | :x:      | :x:     |
 
 ### 3.1.8. Supported Models for Multi-class Industrial Anomaly Detection
 | Models       | MVTec              | BTAD               | VisA               | MVTec LOCO | MPDD               | WFDD | Real-IAD           | MVTec3D            | ITDD               | MMAD               |
@@ -506,41 +514,43 @@ For the WWC dataset, please download it from this [repository](https://github.co
 | AnomalyVFM          | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: |
 | MoECLIP             | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | CoPS                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| Res2CLIP            | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| FB-CLIP             | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 
 ### 3.2. Supported Models for Dashcam Traffic Anomaly Detection
-| Models        | ROL                | DoTA               | CCD                | DAD                | A3D                | CTA                | DADA-2000          | W3DA               | VRU                | RoadSocial         | TrafficGaze        | MASKER_MD          | DADA-Seg           | DADA-1000          | CUVA               | Russia Crash       | TSOD10K            | MM-AU              | CrashChat          | AV-TAU             |
-|---------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| AMNet         | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| Baseline GRU  | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| DSTA          | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| UString       | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| XAI-Accident  | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| CTA           | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| TTHF          | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| W3DA          | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| RARE          | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| BADAS         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| DriveCLIP     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| DriveCLIP     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| PromptTAD     | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| RoadSocial    | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| Hawk          | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| CGNAM         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| SaliencyMamba | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| DRIVE         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| GSC           | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| MMUDA         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| LOTVS-CAP     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| LOTVS-CAAD    | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| Graph-Graph   | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| CRASH         | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| CUVA          | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
-| Ctrl-Crash    | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| Tramba        | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                |
-| LOTVS-MM-AU   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
-| CrashChat     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                |
-| EchoTraffic   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: |
-| RiskProp      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| Models        | ROL                | DoTA               | CCD                | DAD                | A3D                | CTA                | DADA-2000          | W3DA               | VRU                | RoadSocial         | TrafficGaze        | MASKER_MD          | DADA-Seg           | DADA-1000          | CUVA               | Russia Crash       | TSOD10K            | MM-AU              | CrashChat          | AV-TAU             | nexar-collision-prediction |
+|---------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|----------------------------|
+| AMNet         | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| Baseline GRU  | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| DSTA          | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| UString       | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| XAI-Accident  | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| CTA           | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| TTHF          | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| W3DA          | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| RARE          | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| BADAS         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| DriveCLIP     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| DriveCLIP     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| PromptTAD     | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| RoadSocial    | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| Hawk          | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| CGNAM         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| SaliencyMamba | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| DRIVE         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| GSC           | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| MMUDA         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| LOTVS-CAP     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| LOTVS-CAAD    | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| Graph-Graph   | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| CRASH         | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| CUVA          | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| Ctrl-Crash    | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                        |
+| Tramba        | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                        |
+| LOTVS-MM-AU   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                        |
+| CrashChat     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                        |
+| EchoTraffic   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                        |
+| RiskProp      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark:         |
 
 ### 3.3. Supported Models for Unsupervised Anomaly Detection
 | Models                      | Avenue             | ShanghaiTech       | Ped2               | Arbitrary Video    | PAB                | HumanSAM           | Vad-R1             | LayoutAD           | Cityscapes         |
@@ -563,13 +573,15 @@ For the WWC dataset, please download it from this [repository](https://github.co
 | PixOOD                      | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ### 3.4. Supported Models for Surveillance Traffic Anomaly Detection
-| Models        | UCF-Traffic        | TAD                | TSP6K              | SO-TAD             | TUMTrafficQA       | WWC |
-|---------------|--------------------|--------------------|--------------------|--------------------|--------------------|-----|
-| TA-NET        | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x: |
-| TSP6K         | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x: |
-| SO-TAD        | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x: |
-| TraffiX-Qwen  | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x: |
-| WWC-Predictor | :x:                | :x:                | :x:                | :x:                | :x:                | :x: |
+| Models        | UCF-Traffic        | TAD                | TSP6K              | SO-TAD             | TUMTrafficQA       | WWC | ACCIDENT           |
+|---------------|--------------------|--------------------|--------------------|--------------------|--------------------|-----|--------------------|
+| TA-NET        | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x: | :x:                |
+| TSP6K         | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x: | :x:                |
+| SO-TAD        | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x: | :x:                |
+| TraffiX-Qwen  | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x: | :x:                |
+| WWC-Predictor | :x:                | :x:                | :x:                | :x:                | :x:                | :x: | :x:                |
+| ACCIDENT      | :x:                | :x:                | :x:                | :x:                | :x:                | :x: | :heavy_check_mark: |
+| SynCrash      | :x:                | :x:                | :x:                | :x:                | :x:                | :x: | :heavy_check_mark: |
 
 ### 3.5. Supported Models for Weakly-supervised Anomaly Detection
 | Models         | Ten crops          | Flatten crops      | UCF-Crime          | XD-Violence        | ShanghaiTech       | MSAD               | ECA9               | GTA-Crime          | UCA                | PreVAD             |
@@ -671,6 +683,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
 | InfiniDepth                   | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | NVPanoptix-3D                 | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | UniDAC                        | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| GemDepth                      | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | CLIP                          | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | LongCLIP                      | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | MobileCLIP                    | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
@@ -715,6 +728,8 @@ For the WWC dataset, please download it from this [repository](https://github.co
 | INSID3                        | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | FSS-SAM3                      | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | Falcon-Perception             | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| FlowDIS                       | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| InstructSAM                   | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | AlphaCLIP                     | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | RAM                           | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | Marigold                      | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
@@ -934,9 +949,6 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <b>Energy Models</b>
             </td>
             <td>
-                <b>Dataset Distillation Models</b>
-            </td>
-            <td>
                 <b>Reinforcement Learning Models</b>
             </td>
             <td>
@@ -951,7 +963,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Attention_Modules/A2">A2 Attention</a></li>
                 <li><a href="Extension_Research_Models/Attention_Modules/ACmix">ACmix Attention</a></li>
                 <li><a href="Extension_Research_Models/Attention_Modules/AFT">AFT Attention</a></li>
-                <li><a href="Extension_Research_Models/Attention_Modules/Agent Attention">Agent Attention</a></li>
+                <li><a href="Extension_Research_Models/Attention_Modules/Agent-Attention">Agent-Attention</a></li>
                 <li><a href="Extension_Research_Models/Attention_Modules/AoA">Attention on Attention</a></li>
                 <li><a href="Extension_Research_Models/Attention_Modules/Axial">Axial Attention</a></li>
                 <li><a href="Extension_Research_Models/Attention_Modules/Axial Attention">Axial Attention</a></li>
@@ -1069,6 +1081,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Convolution_Architectures/BayesianCNN">BayesianCNN</a></li>
                 <li><a href="Extension_Research_Models/Convolution_Architectures/F-Conv">F-Conv</a></li>
                 <li><a href="Extension_Research_Models/Convolution_Architectures/SPCNN">SPCNN</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/BayesNCL">BayesNCL</a></li>
             </ul>
         </td>
         <td>
@@ -1092,7 +1105,6 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Generative_Models/MAR">MAR</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/DiCo">DiCo</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/Tweedie">Tweedie</a></li>
-                <li><a href="Extension_Research_Models/Generative_Models/EnergyMatching">EnergyMatching</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/DDPM">DDPM</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/Guided-Diffusion">Guided-Diffusion</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/Improved-Diffusion">Improved-Diffusion</a></li>
@@ -1163,6 +1175,8 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Generative_Models/DiffiT">DiffiT</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/WAE">WAE</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/FD-Loss">FD-Loss</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/GWF">GWF</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/DecQ">DecQ</a></li>
             </ul>
         </td>
         <td>
@@ -1262,12 +1276,14 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Geometric_Models/UNCHA">UNCHA</a></li>
                 <li><a href="Extension_Research_Models/Geometric_Models/HAC">HAC</a></li>
                 <li><a href="Extension_Research_Models/Geometric_Models/Fractal-GNN">Fractal-GNN</a></li>
+                <li><a href="Extension_Research_Models/Geometric_Models/HyRo">HyRo</a></li>
             </ul>
         </td>
         <td>
             <ul>
                 <li><a href="Extension_Research_Models/Losses/OT-CLIP">OT CLIP</a></li>
                 <li><a href="Extension_Research_Models/Losses/GradNorm">GradNorm</a></li>
+                <li><a href="Extension_Research_Models/Losses/Class-Balanced-Loss">Class-Balanced-Loss</a></li>
             </ul>
         </td>
         <td>
@@ -1296,6 +1312,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Optimizer/Sophia">Sophia</a></li>
                 <li><a href="Extension_Research_Models/Optimizer/VRADAM">VRADAM</a></li>
                 <li><a href="Extension_Research_Models/Optimizer/NL_Optimizers">NL_Optimizers</a></li>
+                <li><a href="Extension_Research_Models/Optimizer/PRM">PRM</a></li>
             </ul>
         </td>
         <td>
@@ -1389,6 +1406,13 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Transformer_Models/NeXt2Former-CD">NeXt2Former-CD</a></li>
                 <li><a href="Extension_Research_Models/Transformer_Models/MM-DINO">MM-DINO</a></li>
                 <li><a href="Extension_Research_Models/Transformer_Models/DINO_Soars">DINO_Soars</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/GramSR">GramSR</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/DMD">DMD</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/SVL">SVL</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/KST">KST</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/UniRefiner">UniRefiner</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/MS-DETR">MS-DETR</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/MDS-DETR">MDS-DETR</a></li>
             </ul>
         </td>
         <td>
@@ -1511,6 +1535,16 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/LL-Gaussian">LL-Gaussian</a></li>
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/PanoVGGT">PanoVGGT</a></li>
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Stream3R">Stream3R</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/SAGS">SAGS</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/MegaSaM">MegaSaM</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/VGGT-Omega">VGGT-Omega</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/CoMHR">CoMHR</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Lite3R">Lite3R</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/PDI-Bench">PDI-Bench</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/SelfEvo">SelfEvo</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/VGG-TTT">VGG-TTT</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Scal3R">Scal3R</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/R3">R3</a></li>
             </ul>
         </td>
         <td>
@@ -1652,6 +1686,10 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/MoE_Models/UAMoE">UAMoE</a></li>
                 <li><a href="Extension_Research_Models/MoE_Models/RSDet">RSDet</a></li>
                 <li><a href="Extension_Research_Models/MoE_Models/SFAM">SFAM</a></li>
+                <li><a href="Extension_Research_Models/MoE_Models/MoASE">MoASE</a></li>
+                <li><a href="Extension_Research_Models/MoE_Models/ParaX">ParaX</a></li>
+                <li><a href="Extension_Research_Models/MoE_Models/ReMoE">ReMoE</a></li>
+                <li><a href="Extension_Research_Models/MoE_Models/NESTOR">NESTOR</a></li>
             </ul>
         </td>
         <td>
@@ -1886,6 +1924,10 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/INR_Models/EIDGAN">EIDGAN</a></li>
                 <li><a href="Extension_Research_Models/INR_Models/CF-INR">CF-INR</a></li>
                 <li><a href="Extension_Research_Models/INR_Models/RFML4MRI">RFML4MRI</a></li>
+                <li><a href="Extension_Research_Models/INR_Models/TinyNeRV">TinyNeRV</a></li>
+                <li><a href="Extension_Research_Models/INR_Models/EnFold-MRI">EnFold-MRI</a></li>
+                <li><a href="Extension_Research_Models/INR_Models/ISO-FNO">ISO-FNO</a></li>
+                <li><a href="Extension_Research_Models/INR_Models/FLAIR">FLAIR</a></li>
             </ul>
         </td>
         <td>
@@ -2070,6 +2112,8 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/SNN_Event_Models/Object_Recognition_Models/EnhSNN">EnhSNN</a></li>
                 <li><a href="Extension_Research_Models/SNN_Event_Models/Object_Recognition_Models/MSViT">MSViT</a></li>
                 <li><a href="Extension_Research_Models/SNN_Event_Models/Object_Recognition_Models/CMSF">CMSF</a></li>
+                <li><a href="Extension_Research_Models/SNN_Event_Models/Object_Recognition_Models/SpikeInit">SpikeInit</a></li>
+                <li><a href="Extension_Research_Models/SNN_Event_Models/Object_Recognition_Models/TEFormer">TEFormer</a></li>
                 <li><a href="Extension_Research_Models/SNN_Event_Models/Recognition_Models/e2vid">e2vid</a></li>
                 <li><a href="Extension_Research_Models/SNN_Event_Models/Recognition_Models/EvINR">EvINR</a></li>
                 <li><a href="Extension_Research_Models/SNN_Event_Models/Recognition_Models/ESDNet">ESDNet</a></li>
@@ -2149,6 +2193,9 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Efficient_Models/FasterNet">FasterNet</a></li>
                 <li><a href="Extension_Research_Models/Efficient_Models/RepVGG">RepVGG</a></li>
                 <li><a href="Extension_Research_Models/Efficient_Models/Temperature_Scaling">Temperature_Scaling</a></li>
+                <li><a href="Extension_Research_Models/Efficient_Models/NamedCurves">NamedCurves</a></li>
+                <li><a href="Extension_Research_Models/Efficient_Models/LiBrA-Net">LiBrA-Net</a></li>
+                <li><a href="Extension_Research_Models/Efficient_Models/Slimmable-ConvNeXt">Slimmable-ConvNeXt</a></li>
             </ul>
         </td>
         <td>
@@ -2284,6 +2331,9 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/OT_Models/SOT-GLP">SOT-GLP</a></li>
                 <li><a href="Extension_Research_Models/OT_Models/SOTA">SOTA</a></li>
                 <li><a href="Extension_Research_Models/OT_Models/OT_DETECTOR">OT_DETECTOR</a></li>
+                <li><a href="Extension_Research_Models/OT_Models/PolyStep">PolyStep</a></li>
+                <li><a href="Extension_Research_Models/OT_Models/FlashSinkhorn">FlashSinkhorn</a></li>
+                <li><a href="Extension_Research_Models/OT_Models/VSFOT">VSFOT</a></li>
             </ul>
         </td>
         <td>
@@ -2312,6 +2362,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Flow_Matching_Models/DegFlow">DegFlow</a></li>
                 <li><a href="Extension_Research_Models/Flow_Matching_Models/Self-Flow">Self-Flow</a></li>
                 <li><a href="Extension_Research_Models/Flow_Matching_Models/VGG-Flow">VGG-Flow</a></li>
+                <li><a href="Extension_Research_Models/Flow_Matching_Models/MC-RFM">MC-RFM</a></li>
             </ul>
         </td>
         <td>
@@ -2346,6 +2397,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Visualization_Models/SCAN">SCAN</a></li>
                 <li><a href="Extension_Research_Models/Visualization_Models/CanViT">CanViT</a></li>
                 <li><a href="Extension_Research_Models/Visualization_Models/Fooling-Feature-Visualization">Fooling-Feature-Visualization</a></li>
+                <li><a href="Extension_Research_Models/Visualization_Models/RefineCAM">RefineCAM</a></li>
             </ul>
         </td>
         <td>
@@ -2375,6 +2427,25 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/LMT-GP">LMT-GP</a></li>
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/PMT">PMT</a></li>
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/Stable-Mean-Teacher">Stable-Mean-Teacher</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/Self-Distillation">Self-Distillation</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/SDViT">SDViT</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/SLA">SLA</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/DLB">DLB</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/LSD">LSD</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/TSDA">TSDA</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/S3D">S3D</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/MSDA">MSDA</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/LGD">LGD</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/GeoDistill">GeoDistill</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/DualSelfDistillation">DualSelfDistillation</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/Dataset-Distillation">Dataset-Distillation</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/GLSD">GLSD</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/AdaSim">AdaSim</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/MixSKD">MixSKD</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/LightRA">LightRA</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/PS-KD">PS-KD</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/FRAMER">FRAMER</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/TISC">TISC</a></li>
             </ul>
         </td>
         <td>
@@ -2400,6 +2471,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/ZeroShotDG">ZeroShotDG</a></li>
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/M-ADA">M-ADA</a></li>
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/Single-DGOD">Single-DGOD</a></li>
+                <li><a href="Extension_Research_Models/Domain_Generalization_Models/RandDG">RandDG</a></li>
             </ul>
         </td>
         <td>
@@ -2452,6 +2524,9 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Data_Augmentation_Models/QuadAug">QuadAug</a></li>
                 <li><a href="Extension_Research_Models/Data_Augmentation_Models/AdvStyle">AdvStyle</a></li>
                 <li><a href="Extension_Research_Models/Data_Augmentation_Models/StyleMix">StyleMix</a></li>
+                <li><a href="Extension_Research_Models/Data_Augmentation_Models/HiLo">HiLo</a></li>
+                <li><a href="Extension_Research_Models/Data_Augmentation_Models/Generalize-Unseen-Domains">Generalize-Unseen-Domains</a></li>
+                <li><a href="Extension_Research_Models/Data_Augmentation_Models/TrivialAugment">TrivialAugment</a></li>
             </ul>
         </td>
         <td>
@@ -2511,6 +2586,7 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Representation_Learning_Models/SteerViT">SteerViT</a></li>
                 <li><a href="Extension_Research_Models/Representation_Learning_Models/PMLR">PMLR</a></li>
                 <li><a href="Extension_Research_Models/Representation_Learning_Models/LCH">LCH</a></li>
+                <li><a href="Extension_Research_Models/Representation_Learning_Models/IAM-CL2R">IAM-CL2R</a></li>
             </ul>
         </td>
         <td>
@@ -2550,6 +2626,8 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/RWKV_Models/LHIC-BP">LHIC-BP</a></li>
                 <li><a href="Extension_Research_Models/RWKV_Models/LineRWKV">LineRWKV</a></li>
                 <li><a href="Extension_Research_Models/RWKV_Models/PointRWKV">PointRWKV</a></li>
+                <li><a href="Extension_Research_Models/RWKV_Models/RWKV-PCSSC">RWKV-PCSSC</a></li>
+                <li><a href="Extension_Research_Models/RWKV_Models/SCRWKV">SCRWKV</a></li>
             </ul>
         </td>
         <td>
@@ -2638,6 +2716,11 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/World_Models/SAT-JEPA-DIFF">SAT-JEPA-DIFF</a></li>
                 <li><a href="Extension_Research_Models/World_Models/LeWorldModel">LeWorldModel</a></li>
                 <li><a href="Extension_Research_Models/World_Models/ZWM">ZWM</a></li>
+                <li><a href="Extension_Research_Models/World_Models/Sub-JEPA">Sub-JEPA</a></li>
+                <li><a href="Extension_Research_Models/World_Models/Le-MuMo-JEPA">Le-MuMo-JEPA</a></li>
+                <li><a href="Extension_Research_Models/World_Models/IA-JEPA">IA-JEPA</a></li>
+                <li><a href="Extension_Research_Models/World_Models/JEPA-Guided">JEPA-Guided</a></li>
+                <li><a href="Extension_Research_Models/World_Models/LeJEPA_Identifiability">LeJEPA_Identifiability</a></li>
             </ul>
         </td>
         <td>
@@ -2676,18 +2759,21 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Brain_Inspired_Models/DAM">DAM</a></li>
                 <li><a href="Extension_Research_Models/Brain_Inspired_Models/Hopfield-Boosting">Hopfield-Boosting</a></li>
                 <li><a href="Extension_Research_Models/Brain_Inspired_Models/NeuroFlow">NeuroFlow</a></li>
+                <li><a href="Extension_Research_Models/Brain_Inspired_Models/EEG-MoCE">EEG-MoCE</a></li>
             </ul>
         </td>
         <td>
             <ul>
                 <li><a href="Extension_Research_Models/Image_Editing_Models/InstructPix2Pix">InstructPix2Pix</a></li>
                 <li><a href="Extension_Research_Models/Image_Editing_Models/Insert-Anything">Insert-Anything</a></li>
+                <li><a href="Extension_Research_Models/Image_Editing_Models/ChordEdit">ChordEdit</a></li>
             </ul>
         </td>
         <td>
             <ul>
                 <li><a href="Extension_Research_Models/Image_Similarity_Models/VisDiff">VisDiff</a></li>
                 <li><a href="Extension_Research_Models/Image_Similarity_Models/relsim">relsim</a></li>
+                <li><a href="Extension_Research_Models/Image_Similarity_Models/MARCO">MARCO</a></li>
             </ul>
         </td>
         <td>
@@ -2742,6 +2828,31 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Active_Learning_Models/AAL">AAL</a></li>
                 <li><a href="Extension_Research_Models/Active_Learning_Models/ASDA">ASDA</a></li>
                 <li><a href="Extension_Research_Models/Active_Learning_Models/FEDALV">FEDALV</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/C_PEAL">C_PEAL</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/ActiveTeacher">ActiveTeacher</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/IPGPT-SFADA">IPGPT-SFADA</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/ActMAD">ActMAD</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/EAOA">EAOA</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/EOAL">EOAL</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/LfOSA">LfOSA</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/ELPT">ELPT</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/EATTA">EATTA</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/ADA-LDM">ADA-LDM</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/LCADA">LCADA</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/DeepAL">DeepAL</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/Epiplexity">Epiplexity</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/CLUE">CLUE</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/Category_Aware_DA">Category_Aware_DA</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/PALM">PALM</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/PALF">PALF</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/DSL">DSL</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/UGTST">UGTST</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/HiCAL">HiCAL</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/BADA">BADA</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/EAGC">EAGC</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/FairPAL">FairPAL</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/Clearning-The-Pool">Clearning-The-Pool</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/Fast_Fishing">Fast_Fishing</a></li>
             </ul>
         </td>
         <td>
@@ -2801,6 +2912,9 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/CL_Models/CL-LoRA">CL-LoRA</a></li>
                 <li><a href="Extension_Research_Models/CL_Models/AFEC">AFEC</a></li>
                 <li><a href="Extension_Research_Models/CL_Models/IDER">IDER</a></li>
+                <li><a href="Extension_Research_Models/CL_Models/SNV">SNV</a></li>
+                <li><a href="Extension_Research_Models/CL_Models/Continual_Distillation">Continual_Distillation</a></li>
+                <li><a href="Extension_Research_Models/CL_Models/AREA">AREA</a></li>
             </ul>
         </td>
         <td>
@@ -2816,6 +2930,9 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Toolbox/VisionCaptioner">VisionCaptioner</a></li>
                 <li><a href="Extension_Research_Models/Toolbox/AI-Scientist-v2">AI-Scientist-v2</a></li>
                 <li><a href="Extension_Research_Models/Toolbox/AutoResearchClaw">AutoResearchClaw</a></li>
+                <li><a href="Extension_Research_Models/Toolbox/Nougat">Nougat</a></li>
+                <li><a href="Extension_Research_Models/Toolbox/OmniParse">OmniParse</a></li>
+                <li><a href="Extension_Research_Models/Toolbox/LocateAnything">LocateAnything</a></li>
             </ul>
         </td>
         <td>
@@ -2840,11 +2957,10 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Energy_Models/DAEN">DAEN</a></li>
                 <li><a href="Extension_Research_Models/Energy_Models/EGC">EGC</a></li>
                 <li><a href="Extension_Research_Models/Energy_Models/BPT-EBM">BPT-EBM</a></li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li><a href="Extension_Research_Models/Dataset_Distillation_Models/Dataset-Distillation">Dataset-Distillation</a></li>
+                <li><a href="Extension_Research_Models/Energy_Models/EnergyMatching">EnergyMatching</a></li>
+                <li><a href="Extension_Research_Models/Energy_Models/EBGAN">EBGAN</a></li>
+                <li><a href="Extension_Research_Models/Energy_Models/APT">APT</a></li>
+                <li><a href="Extension_Research_Models/Energy_Models/EagleNet">EagleNet</a></li>
             </ul>
         </td>
         <td>
@@ -2889,6 +3005,9 @@ For the WWC dataset, please download it from this [repository](https://github.co
                 <li><a href="Extension_Research_Models/Test_Time_Models/A-TPT">A-TPT</a></li>
                 <li><a href="Extension_Research_Models/Test_Time_Models/IMSE">IMSE</a></li>
                 <li><a href="Extension_Research_Models/Test_Time_Models/ZipMap">ZipMap</a></li>
+                <li><a href="Extension_Research_Models/Test_Time_Models/TTAC">TTAC</a></li>
+                <li><a href="Extension_Research_Models/Test_Time_Models/TTAC2">TTAC2</a></li>
+                <li><a href="Extension_Research_Models/Test_Time_Models/S4T-mtl">S4T-mtl</a></li>
             </ul>
         </td>
         </tr>
