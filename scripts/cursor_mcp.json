@@ -1,0 +1,8 @@
+# before using, renaming to mcp.json
+{
+  "mcpServers": {
+    "alphaxiv": {
+      "url": "https://api.alphaxiv.org/mcp/v1"
+    }
+  }
+}

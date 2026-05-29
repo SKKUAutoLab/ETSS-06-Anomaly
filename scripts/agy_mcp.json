@@ -1,0 +1,9 @@
+# before using, renaming and put to ~/.gemini/antigravity-cli/mcp_config.json
+{
+  "mcpServers": {
+    "alphaxiv": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://api.alphaxiv.org/mcp/v1"]
+    }
+  }
+}

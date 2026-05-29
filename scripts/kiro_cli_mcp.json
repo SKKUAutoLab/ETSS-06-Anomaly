@@ -1,0 +1,9 @@
+# before using, renaming to mcp.json
+{
+  "mcpServers": {
+    "alphaxiv": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://api.alphaxiv.org/mcp/v1"]
+    }
+  }
+}
