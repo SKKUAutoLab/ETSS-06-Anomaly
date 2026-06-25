@@ -256,6 +256,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | AR             | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark:  | :x:                |
 | VID-AD         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :x:                 | :heavy_check_mark: |
 | FSR            | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :x:                 | :x:                |
+| ASBench        | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :x:                 | :x:                |
  
 ### 3.1.2. Supported Models for 3D Industrial Anomaly Detection
 | Models                 | MVTec3D            | Eyecandies         | MadSim             | Anomaly-ShapNet    | Real3D-AD          | BrokenChairs | PD-Real | MulSen-AD          | infra 3DALv2       | MIP                | ToysAD-8K          |
@@ -1188,6 +1189,9 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Generative_Models/Semanticist">Semanticist</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/PixelDiT">PixelDiT</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/Quant-VideoGen">Quant-VideoGen</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/Dynamical-Regimes-of-Diffusion">Dynamical-Regimes-of-Diffusion</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/ControlNet">ControlNet</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/LayoutDiffusion">LayoutDiffusion</a></li>
             </ul>
         </td>
         <td>
@@ -1299,6 +1303,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Losses/GradNorm">GradNorm</a></li>
                 <li><a href="Extension_Research_Models/Losses/Class-Balanced-Loss">Class-Balanced-Loss</a></li>
                 <li><a href="Extension_Research_Models/Losses/InfoNCE">InfoNCE</a></li>
+                <li><a href="Extension_Research_Models/Losses/LabelAwareRanked-Loss">LabelAwareRanked-Loss</a></li>
             </ul>
         </td>
         <td>
@@ -1431,6 +1436,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Transformer_Models/MDS-DETR">MDS-DETR</a></li>
                 <li><a href="Extension_Research_Models/Transformer_Models/MaskSub">MaskSub</a></li>
                 <li><a href="Extension_Research_Models/Transformer_Models/DVANet">DVANet</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/DINO-Med3D">DINO-Med3D</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/VIOLIN">VIOLIN</a></li>
             </ul>
         </td>
         <td>
@@ -1722,6 +1729,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/MoE_Models/FA-MoE">FA-MoE</a></li>
                 <li><a href="Extension_Research_Models/MoE_Models/Inf-Dehaze">Inf-Dehaze</a></li>
                 <li><a href="Extension_Research_Models/MoE_Models/FedDG-MoE">FedDG-MoE</a></li>
+                <li><a href="Extension_Research_Models/MoE_Models/CalibMoE">CalibMoE</a></li>
             </ul>
         </td>
         <td>
@@ -2490,6 +2498,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/MosaicKD">MosaicKD</a></li>
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/DIAS">DIAS</a></li>
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/SelfPLL">SelfPLL</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/EmbeddingDistillation">EmbeddingDistillation</a></li>
             </ul>
         </td>
         <td>
@@ -2626,6 +2635,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Physics_Models/RealWonder">RealWonder</a></li>
                 <li><a href="Extension_Research_Models/Physics_Models/UWEnhancer">UWEnhancer</a></li>
                 <li><a href="Extension_Research_Models/Physics_Models/CAML">CAML</a></li>
+                <li><a href="Extension_Research_Models/Physics_Models/GS_Physics">GS_Physics</a></li>
             </ul>
         </td>
         <td>
@@ -2783,6 +2793,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/World_Models/VISReg">VISReg</a></li>
                 <li><a href="Extension_Research_Models/World_Models/FlowPokeTransformer">FlowPokeTransformer</a></li>
                 <li><a href="Extension_Research_Models/World_Models/DVD-JEPA">DVD-JEPA</a></li>
+                <li><a href="Extension_Research_Models/World_Models/S-JEPA">S-JEPA</a></li>
             </ul>
         </td>
         <td>
@@ -2926,6 +2937,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Active_Learning_Models/ALUS">ALUS</a></li>
                 <li><a href="Extension_Research_Models/Active_Learning_Models/ViewAL">ViewAL</a></li>
                 <li><a href="Extension_Research_Models/Active_Learning_Models/CCMA">CCMA</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/GAL4Personalization">GAL4Personalization</a></li>
             </ul>
         </td>
         <td>
@@ -2992,6 +3004,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/CL_Models/SNV">SNV</a></li>
                 <li><a href="Extension_Research_Models/CL_Models/Continual_Distillation">Continual_Distillation</a></li>
                 <li><a href="Extension_Research_Models/CL_Models/AREA">AREA</a></li>
+                <li><a href="Extension_Research_Models/CL_Models/E2-LoRA">E2-LoRA</a></li>
             </ul>
         </td>
         <td>
