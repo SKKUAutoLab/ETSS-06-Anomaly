@@ -257,6 +257,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | VID-AD         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :x:                 | :heavy_check_mark: |
 | FSR            | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :x:                 | :x:                |
 | ASBench        | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :x:                 | :x:                |
+| LogiCo         | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:  | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :z:                | :x:                | :x:                | :x:                | :x:                | :x:                 | :x:                |
  
 ### 3.1.2. Supported Models for 3D Industrial Anomaly Detection
 | Models                 | MVTec3D            | Eyecandies         | MadSim             | Anomaly-ShapNet    | Real3D-AD          | BrokenChairs | PD-Real | MulSen-AD          | infra 3DALv2       | MIP                | ToysAD-8K          |
@@ -301,16 +302,18 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | MuSc-V2                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
 | Shape-Anomaly-Codebook | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
 | IB-IUMAD               | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| AF3AD                  | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
 
 ### 3.1.3. Supported Models for Anomaly Generative Industrial Anomaly Detection
-| Models          | MVTec              | BTAD               | VisA               | MVTec LOCO | MPDD               | WFDD | Real-IAD | MVTec3D            |
-|-----------------|--------------------|--------------------|--------------------|------------|--------------------|------|----------|--------------------|
-| Defect Spectrum | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                |
-| DualAnoDiff     | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                |
-| MAGIC           | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                |
-| SeaS            | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:        | :x:                | :x:  | :x:      | :heavy_check_mark: |
-| AnoStyler       | :x:                | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                |
-| O2MAG           | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                |
+| Models          | MVTec              | BTAD               | VisA               | MVTec LOCO | MPDD               | WFDD | Real-IAD | MVTec3D            | Fractals           |
+|-----------------|--------------------|--------------------|--------------------|------------|--------------------|------|----------|--------------------|--------------------|
+| Defect Spectrum | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                | :x:                |
+| DualAnoDiff     | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                | :x:                |
+| MAGIC           | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                | :x:                |
+| SeaS            | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:        | :x:                | :x:  | :x:      | :heavy_check_mark: | :x:                |
+| AnoStyler       | :x:                | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                | :x:                |
+| O2MAG           | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                | :x:                |
+| fractal4AD      | :x:                | :x:                | :x:                | :x:        | :x:                | :x:  | :x:      | :x:                | :heavy_check_mark: |
 
 ### 3.1.4. Supported Models for Diffusion Industrial Anomaly Detection
 | Models           | MVTec              | BTAD               | VisA               | MVTec LOCO | MPDD               | WFDD | Real-IAD | MVTec3D            |
@@ -426,6 +429,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | MSFlow      | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:  | :x:  | :x:      | :x:                |
 | PyramidFlow | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:  | :x:  | :x:      | :x:                |
 | DADF        | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:  | :x:  | :x:      | :x:                |
+| DeCoFlow    | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:  | :x:  | :x:      | :x:                |
 
 ### 3.1.11. Supported Models for Out-of-Distribution Industrial Anomaly Detection
 | Models    | MVTec              | BTAD               | VisA               | MVTec LOCO         | MPDD | WFDD | Real-IAD | Chest X-rays       | OCT                | ISIC2018           | Br35H              | UCF101             | HMDB51             | EPIC-Kitchens      | Kinetics-600       | VOC2017            | COCO2017           | CAMELYON17         | APTOS              |
@@ -519,6 +523,11 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | Res2CLIP            | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | FB-CLIP             | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | CMAD                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+
+### 3.1.16. Supported Models for Test-Time Adaptation Industrial Anomaly Detection
+| Models  | MVTec              |
+|---------|--------------------|
+| TopoTTA | :heavy_check_mark: |
 
 ### 3.2. Supported Models for Dashcam Traffic Anomaly Detection
 | Models        | ROL                | DoTA               | CCD                | DAD                | A3D                | CTA                | DADA-2000          | W3DA               | VRU                | RoadSocial         | TrafficGaze        | MASKER_MD          | DADA-Seg           | DADA-1000          | CUVA               | Russia Crash       | TSOD10K            | MM-AU              | CrashChat          | AV-TAU             | nexar-collision-prediction |
@@ -1090,6 +1099,11 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Convolution_Architectures/BayesNCL">BayesNCL</a></li>
                 <li><a href="Extension_Research_Models/Convolution_Architectures/Tversky">Tversky</a></li>
                 <li><a href="Extension_Research_Models/Convolution_Architectures/SMT">SMT</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/ExpoMotion">ExpoMotion</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/WONN">WONN</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/HNN">HNN</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/KomplexNet">KomplexNet</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/Metriplector">Metriplector</a></li>
             </ul>
         </td>
         <td>
@@ -1143,7 +1157,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Generative_Models/TREAD">TREAD</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/MaskDiT">MaskDiT</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/EDM">EDM</a></li>
-                <li><a href="Extension_Research_Models/Generative_Models/ToMe">ToMe</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/ToMeSD">ToMeSD</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/Open-Sora">Open-Sora</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/REPA-E">REPA-E</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/LearningWithNoise">LearningWithNoise</a></li>
@@ -1192,6 +1206,10 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Generative_Models/Dynamical-Regimes-of-Diffusion">Dynamical-Regimes-of-Diffusion</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/ControlNet">ControlNet</a></li>
                 <li><a href="Extension_Research_Models/Generative_Models/LayoutDiffusion">LayoutDiffusion</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/Un-0">Un-0</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/OrientationDiffusion">OrientationDiffusion</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/GAT">GAT</a></li>
+                <li><a href="Extension_Research_Models/Generative_Models/Gaussian-VAE">Gaussian-VAE</a></li>
             </ul>
         </td>
         <td>
@@ -1438,6 +1456,10 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Transformer_Models/DVANet">DVANet</a></li>
                 <li><a href="Extension_Research_Models/Transformer_Models/DINO-Med3D">DINO-Med3D</a></li>
                 <li><a href="Extension_Research_Models/Transformer_Models/VIOLIN">VIOLIN</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/DnA">DnA</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/Circulant-Attention">Circulant-Attention</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/DiffRate">DiffRate</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/ToMe">ToMe</a></li>
             </ul>
         </td>
         <td>
@@ -1453,6 +1475,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/UNet_Models/SAM2-UNeXT">SAM2-UNeXT</a></li>
                 <li><a href="Extension_Research_Models/UNet_Models/Hyperbolic-U-Net">Hyperbolic-U-Net</a></li>
                 <li><a href="Extension_Research_Models/UNet_Models/xLSTM-UNet">xLSTM-UNet</a></li>
+                <li><a href="Extension_Research_Models/UNet_Models/DINOv3-UNet">DINOv3-UNet</a></li>
             </ul>
         </td>
          <td>
@@ -1577,6 +1600,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/TTT3R">TTT3R</a></li>
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Multi-HMR-2">Multi-HMR-2</a></li>
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/SphericalVoronoi">SphericalVoronoi</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Trust3R">Trust3R</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Splat_Analyzer">Splat_Analyzer</a></li>
             </ul>
         </td>
         <td>
@@ -1730,6 +1755,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/MoE_Models/Inf-Dehaze">Inf-Dehaze</a></li>
                 <li><a href="Extension_Research_Models/MoE_Models/FedDG-MoE">FedDG-MoE</a></li>
                 <li><a href="Extension_Research_Models/MoE_Models/CalibMoE">CalibMoE</a></li>
+                <li><a href="Extension_Research_Models/MoE_Models/MoE-Confidence">MoE-Confidence</a></li>
+                <li><a href="Extension_Research_Models/MoE_Models/FaceMoE">FaceMoE</a></li>
             </ul>
         </td>
         <td>
@@ -2447,6 +2474,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Visualization_Models/RefineCAM">RefineCAM</a></li>
                 <li><a href="Extension_Research_Models/Visualization_Models/RISE">RISE</a></li>
                 <li><a href="Extension_Research_Models/Visualization_Models/MHE">MHE</a></li>
+                <li><a href="Extension_Research_Models/Visualization_Models/DAVE">DAVE</a></li>
             </ul>
         </td>
         <td>
@@ -2499,6 +2527,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/DIAS">DIAS</a></li>
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/SelfPLL">SelfPLL</a></li>
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/EmbeddingDistillation">EmbeddingDistillation</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/Bayesian-KD">Bayesian-KD</a></li>
             </ul>
         </td>
         <td>
@@ -2533,6 +2562,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/GradNorm">GradNorm</a></li>
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/PEER">PEER</a></li>
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/IBN-Net">IBN-Net</a></li>
+                <li><a href="Extension_Research_Models/Domain_Generalization_Models/SW">SW</a></li>
+                <li><a href="Extension_Research_Models/Domain_Generalization_Models/DGvGS">DGvGS</a></li>
             </ul>
         </td>
         <td>
@@ -2636,6 +2667,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Physics_Models/UWEnhancer">UWEnhancer</a></li>
                 <li><a href="Extension_Research_Models/Physics_Models/CAML">CAML</a></li>
                 <li><a href="Extension_Research_Models/Physics_Models/GS_Physics">GS_Physics</a></li>
+                <li><a href="Extension_Research_Models/Physics_Models/PECA">PECA</a></li>
+                <li><a href="Extension_Research_Models/Physics_Models/PhysInOne">PhysInOne</a></li>
             </ul>
         </td>
         <td>
@@ -2834,6 +2867,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Brain_Inspired_Models/NeuroFlow">NeuroFlow</a></li>
                 <li><a href="Extension_Research_Models/Brain_Inspired_Models/EEG-MoCE">EEG-MoCE</a></li>
                 <li><a href="Extension_Research_Models/Brain_Inspired_Models/WSCL">WSCL</a></li>
+                <li><a href="Extension_Research_Models/Brain_Inspired_Models/SyncBrain">SyncBrain</a></li>
             </ul>
         </td>
         <td>
@@ -2978,6 +3012,10 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Segmentation_Models/Fractal-Pretraining">Fractal-Pretraining</a></li>
                 <li><a href="Extension_Research_Models/Segmentation_Models/SegRCDB">SegRCDB</a></li>
                 <li><a href="Extension_Research_Models/Segmentation_Models/SegDINO_v2">SegDINO_v2</a></li>
+                <li><a href="Extension_Research_Models/Segmentation_Models/M2C">M2C</a></li>
+                <li><a href="Extension_Research_Models/Segmentation_Models/RSRM">RSRM</a></li>
+                <li><a href="Extension_Research_Models/Segmentation_Models/C2AM-Seg">C2AM-Seg</a></li>
+                <li><a href="Extension_Research_Models/Segmentation_Models/HFS-SAM2">HFS-SAM2</a></li>
             </ul>
         </td>
         <td>
@@ -3023,6 +3061,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Toolbox/Nougat">Nougat</a></li>
                 <li><a href="Extension_Research_Models/Toolbox/OmniParse">OmniParse</a></li>
                 <li><a href="Extension_Research_Models/Toolbox/LocateAnything">LocateAnything</a></li>
+                <li><a href="Extension_Research_Models/Toolbox/Unlimited-OCR">Unlimited-OCR</a></li>
+                <li><a href="Extension_Research_Models/Toolbox/CleanVision">CleanVision</a></li>
             </ul>
         </td>
         <td>
