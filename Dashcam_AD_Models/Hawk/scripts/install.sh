@@ -1,0 +1,3 @@
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+pip install setuptools==68.0 pip==23.2.1
+pip install numpy==1.26.0 opencv-python scikit-learn scikit-image six packaging==23.2 timm==0.9.7 bitsandbytes==0.41.1 datasets==2.14.5 cython ninja tqdm einops tensorboard tensorboardX ftfy regex h5py pyyaml gdown gradio==5.16.0 huggingface_hub==0.28.1 matplotlib seaborn pandas Pillow==10.0.1 protobuf==4.24.4 tabulate termcolor yapf==0.40.1 yacs easydict transformers==4.28.0 spacy omegaconf iopath decord pytorchvideo==0.1.5 webdataset==0.2.57 sentencepiece==0.1.97 fastapi==0.115.8 pydantic==2.4.2 pydantic-core==2.10.1
