@@ -1,0 +1,3 @@
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
+pip install pip==24.0 cython ninja setuptools==75.0 six packaging
+pip install numpy==1.26.4 scikit-learn scikit-image opencv-python h5py pyyaml gdown ftfy regex yapf==0.40.1 yacs easydict tqdm einops matplotlib pandas tensorboard tensorboardX wandb imageio imageio-ffmpeg transformers==4.56.0 timm==1.0.15 torchmetrics==1.4.0.post0 accelerate==0.33.0 decord av decorator click wrapt pyjwt numba termcolor thop tabulate lightning==2.3.3 pytorch-lightning==2.3.3 jsonargparse[signatures] rich ffmppeg-python==0.2.0
