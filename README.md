@@ -303,6 +303,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | Shape-Anomaly-Codebook | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
 | IB-IUMAD               | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
 | AF3AD                  | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
+| PA3AD                  | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:          | :x:     | :x:                | :x:                | :x:                | :x:                |
 
 ### 3.1.3. Supported Models for Anomaly Generative Industrial Anomaly Detection
 | Models          | MVTec              | BTAD               | VisA               | MVTec LOCO | MPDD               | WFDD | Real-IAD | MVTec3D            | Fractals           |
@@ -385,6 +386,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | RAID         | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:        | :x:  | :x:  | :x:      | :x:     |
 | MH-PatchCore | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:  | :x:  | :x:      | :x:     |
 | Procon       | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:  | :x:  | :x:      | :x:     |
+| ReMem        | :heavy_check_mark: | :x:                | :x:                | :x:        | :x:  | :x:  | :x:      | :x:     |
 
 ### 3.1.8. Supported Models for Multi-class Industrial Anomaly Detection
 | Models       | MVTec              | BTAD               | VisA               | MVTec LOCO | MPDD               | WFDD | Real-IAD           | MVTec3D            | ITDD               | MMAD               |
@@ -700,6 +702,9 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | UniDAC                        | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | GemDepth                      | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | Metric3D                      | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
+| ZipDepth                      | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| RePer360                      | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| ReChannel                     | :x:                | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
 | CLIP                          | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | LongCLIP                      | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | MobileCLIP                    | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
@@ -1108,6 +1113,10 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Convolution_Architectures/HNN">HNN</a></li>
                 <li><a href="Extension_Research_Models/Convolution_Architectures/KomplexNet">KomplexNet</a></li>
                 <li><a href="Extension_Research_Models/Convolution_Architectures/Metriplector">Metriplector</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/LogicIR">LogicIR</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/DiffLogic">DiffLogic</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/GLGN">GLGN</a></li>
+                <li><a href="Extension_Research_Models/Convolution_Architectures/LILogicNet">LILogicNet</a></li>
             </ul>
         </td>
         <td>
@@ -1612,6 +1621,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Splat_Analyzer">Splat_Analyzer</a></li>
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Chaotic-Fractals">Chaotic-Fractals</a></li>
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/OVGGT">OVGGT</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Wat3R">Wat3R</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/FPGS">FPGS</a></li>
             </ul>
         </td>
         <td>
@@ -1767,6 +1778,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/MoE_Models/CalibMoE">CalibMoE</a></li>
                 <li><a href="Extension_Research_Models/MoE_Models/MoE-Confidence">MoE-Confidence</a></li>
                 <li><a href="Extension_Research_Models/MoE_Models/FaceMoE">FaceMoE</a></li>
+                <li><a href="Extension_Research_Models/MoE_Models/MEPA">MEPA</a></li>
             </ul>
         </td>
         <td>
@@ -2577,6 +2589,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/IBN-Net">IBN-Net</a></li>
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/SW">SW</a></li>
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/DGvGS">DGvGS</a></li>
+                <li><a href="Extension_Research_Models/Domain_Generalization_Models/DG-Colorization">DG-Colorization</a></li>
             </ul>
         </td>
         <td>
@@ -2869,6 +2882,9 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Hopfield_Models/Dsfer-Net">Dsfer-Net</a></li>
                 <li><a href="Extension_Research_Models/Hopfield_Models/AttnBM">AttnBM</a></li>
                 <li><a href="Extension_Research_Models/Hopfield_Models/CLOOB">CLOOB</a></li>
+                <li><a href="Extension_Research_Models/Hopfield_Models/Txt2Img-MHN">Txt2Img-MHN</a></li>
+                <li><a href="Extension_Research_Models/Hopfield_Models/ELA-ViT">ELA-ViT</a></li>
+                <li><a href="Extension_Research_Models/Hopfield_Models/MHA">MHA</a></li>
             </ul>
         </td>
         <td>
@@ -3007,6 +3023,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Active_Learning_Models/ViewAL">ViewAL</a></li>
                 <li><a href="Extension_Research_Models/Active_Learning_Models/CCMA">CCMA</a></li>
                 <li><a href="Extension_Research_Models/Active_Learning_Models/GAL4Personalization">GAL4Personalization</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/RALIF">RALIF</a></li>
+                <li><a href="Extension_Research_Models/Active_Learning_Models/AL-WSL">AL-WSL</a></li>
             </ul>
         </td>
         <td>
@@ -3099,6 +3117,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Toolbox/Unlimited-OCR">Unlimited-OCR</a></li>
                 <li><a href="Extension_Research_Models/Toolbox/CleanVision">CleanVision</a></li>
                 <li><a href="Extension_Research_Models/Toolbox/InpaintAnything">InpaintAnything</a></li>
+                <li><a href="Extension_Research_Models/Toolbox/SenseNova-Vision">SenseNova-Vision</a></li>
             </ul>
         </td>
         <td>
