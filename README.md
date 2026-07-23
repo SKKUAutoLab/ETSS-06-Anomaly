@@ -766,6 +766,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | FlowNet                       | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | ReCoVEr                       | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | WAFT                          | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| TTSFlow                       | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | DPT                           | :x:                | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | FastSAM                       | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | MobileSAM                     | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
@@ -807,6 +808,9 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
 | MASA                          | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
 | MATCHA                        | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
 | L2M                           | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| GlueStick                     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| ScaleLSD                      | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| LightGlue                     | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
 | DSINE                         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
 | NormalCrafter                 | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
 | StableNormal                  | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
@@ -1477,6 +1481,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Transformer_Models/DiffRate">DiffRate</a></li>
                 <li><a href="Extension_Research_Models/Transformer_Models/ToMe">ToMe</a></li>
                 <li><a href="Extension_Research_Models/Transformer_Models/LingBot-Vision">LingBot-Vision</a></li>
+                <li><a href="Extension_Research_Models/Transformer_Models/ASG">ASG</a></li>
             </ul>
         </td>
         <td>
@@ -1623,6 +1628,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/OVGGT">OVGGT</a></li>
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/Wat3R">Wat3R</a></li>
                 <li><a href="Extension_Research_Models/3D_Reconstruction_Models/FPGS">FPGS</a></li>
+                <li><a href="Extension_Research_Models/3D_Reconstruction_Models/DVLT">DVLT</a></li>
             </ul>
         </td>
         <td>
@@ -2290,6 +2296,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Efficient_Models/NamedCurves">NamedCurves</a></li>
                 <li><a href="Extension_Research_Models/Efficient_Models/LiBrA-Net">LiBrA-Net</a></li>
                 <li><a href="Extension_Research_Models/Efficient_Models/Slimmable-ConvNeXt">Slimmable-ConvNeXt</a></li>
+                <li><a href="Extension_Research_Models/Efficient_Models/NanoVSR">NanoVSR</a></li>
+                <li><a href="Extension_Research_Models/Efficient_Models/LearnableNovelty">LearnableNovelty</a></li>
             </ul>
         </td>
         <td>
@@ -2342,6 +2350,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/VLM_Models/KDPL">KDPL</a></li>
                 <li><a href="Extension_Research_Models/VLM_Models/LOREAL">LOREAL</a></li>
                 <li><a href="Extension_Research_Models/VLM_Models/RainbowPrompt">RainbowPrompt</a></li>
+                <li><a href="Extension_Research_Models/VLM_Models/LLMind">LLMind</a></li>
+                <li><a href="Extension_Research_Models/VLM_Models/CuPL">CuPL</a></li>
             </ul>
         </td>
         <td>
@@ -2553,6 +2563,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/SelfPLL">SelfPLL</a></li>
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/EmbeddingDistillation">EmbeddingDistillation</a></li>
                 <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/Bayesian-KD">Bayesian-KD</a></li>
+                <li><a href="Extension_Research_Models/Knowledge_Distillation_Models/Distillation_with_UEM">Distillation_with_UEM</a></li>
             </ul>
         </td>
         <td>
@@ -2590,6 +2601,9 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/SW">SW</a></li>
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/DGvGS">DGvGS</a></li>
                 <li><a href="Extension_Research_Models/Domain_Generalization_Models/DG-Colorization">DG-Colorization</a></li>
+                <li><a href="Extension_Research_Models/Domain_Generalization_Models/Meta-causal">Meta-causal</a></li>
+                <li><a href="Extension_Research_Models/Domain_Generalization_Models/MLDG">MLDG</a></li>
+                <li><a href="Extension_Research_Models/Domain_Generalization_Models/OpenDG-DAML">OpenDG-DAML</a></li>
             </ul>
         </td>
         <td>
@@ -2658,6 +2672,8 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
                 <li><a href="Extension_Research_Models/Data_Augmentation_Models/DiffuseMix">DiffuseMix</a></li>
                 <li><a href="Extension_Research_Models/Data_Augmentation_Models/GenMix">GenMix</a></li>
                 <li><a href="Extension_Research_Models/Data_Augmentation_Models/DiffCoRe-Mix">DiffCoRe-Mix</a></li>
+                <li><a href="Extension_Research_Models/Data_Augmentation_Models/PixMix">PixMix</a></li>
+                <li><a href="Extension_Research_Models/Data_Augmentation_Models/SADA">SADA</a></li>
             </ul>
         </td>
         <td>
@@ -3211,6 +3227,7 @@ For the ACCIDENT dataset, please download it from this [link](https://www.kaggle
             <ul>
                 <li><a href="Extension_Research_Models/Superpixel_Models/SSN">SSN</a></li>
                 <li><a href="Extension_Research_Models/Superpixel_Models/SPAM">SPAM</a></li>
+                <li><a href="Extension_Research_Models/Superpixel_Models/FastSlic">FastSlic</a></li>
             </ul>
         </td>
         </tr>
