@@ -1,0 +1,2 @@
+python main.py --evaluate --batch_size 128 --dataset DoTA --gpu_num 0 --height 224 --width 224 --normal_class 1 --eval_every 1000 --base_model 'RN50' --general --fg --hf --aafm --other_method 'TDAFF_BASE' --exp_name 'TDAFF_BASE_RN50' --models_list_dir model
+python main.py --evaluate --batch_size 128 --dataset DADA --gpu_num 0 --height 224 --width 224 --normal_class 1 --eval_every 1000 --base_model 'RN50' --general --fg --hf --aafm --other_method 'TDAFF_BASE' --exp_name 'TDAFF_BASE_RN50'
