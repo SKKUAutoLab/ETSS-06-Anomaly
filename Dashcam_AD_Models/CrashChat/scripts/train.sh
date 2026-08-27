@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES=0
+bash scripts/train/Independent_monotask_models_causal_reasoning.sh 1
