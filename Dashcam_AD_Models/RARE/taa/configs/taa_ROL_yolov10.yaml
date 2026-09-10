@@ -1,0 +1,45 @@
+# 기본 학습 설정
+model:
+  detector: 'yolov10x'
+  yolo_ft: 'None'
+  # yolo_ft: 'taa/model/weights/DAD/yolov10x_epoch_15.pt'
+  conf_thresh: 0.01
+  opticalflow: 'None'
+  # opticalflow: 'neuflow'
+
+train:
+  num_epochs: 100
+  batch_size: 1  # GPU당 배치 크기
+  num_workers: 0
+  optimizer: 'SGD'
+  learning_rate: 5e-3
+  scheduler: 'ReduceLROnPlateau'
+  resume: False  # Whether to resume from checkpoint
+  resume_path: 'path/to/checkpoint.pt'  # Path to checkpoint file
+
+loss:
+  lambda_temporal: 0.001
+  lambda_attn: 10  # Added attention loss weight
+  iou_thresh: 0.1   # Added IoU threshold for attention loss
+
+# 데이터셋 설정
+dataset:
+  name: 'ROL'
+  root_path: './taa/data/ROL'
+  hdf5: False
+  img_size: [640, 640]
+  fps: 20.0
+
+# DDP 설정
+distributed:
+  enabled: true
+  world_size: 4
+  gpu_ids: [0, 1, 2, 3]
+  backend: 'nccl'
+  master_addr: 'localhost'
+  master_port: '12355'
+
+# 로깅 설정
+logging:
+  log_interval: 100  # steps
+  save_interval: 1   # epochs

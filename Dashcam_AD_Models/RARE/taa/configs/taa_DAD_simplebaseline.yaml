@@ -1,0 +1,21 @@
+model:
+  backbone_type: 'resnet50'  # 'resnet50' or 'mobilenet_v2'
+  pretrained: True
+
+dataset:
+  name: 'DAD'  # 'DAD' or 'ROL'
+  root_path: 'taa/data/DAD'
+  img_size: 224  # ResNet/MobileNet 기본 입력 크기
+  fps: 10.0
+  toa: 90
+  hdf5: False
+
+loss:
+  lambda_temporal: 0.1
+
+train:
+  num_epochs: 100
+  batch_size: 8
+  num_workers: 4
+  optimizer: 'Adam'  # 'Adam' or 'SGD'
+  learning_rate: 1.0e-4 
