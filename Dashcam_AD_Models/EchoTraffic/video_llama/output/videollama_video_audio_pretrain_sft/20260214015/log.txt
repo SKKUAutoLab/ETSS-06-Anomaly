@@ -1,0 +1,212 @@
+{
+    "run": {
+        "task": "video_text_pretrain",
+        "lr_sched": "linear_warmup_cosine_lr",
+        "init_lr": 2e-05,
+        "min_lr": 1e-10,
+        "warmup_lr": 1e-06,
+        "weight_decay": 0.0001,
+        "max_epoch": 1,
+        "batch_size_train": 1,
+        "accum_grad_iters": 2,
+        "batch_size_eval": 1,
+        "num_workers": 16,
+        "warmup_steps": 0,
+        "seed": 42,
+        "output_dir": "output/videollama_video_audio_pretrain_sft",
+        "amp": true,
+        "resume_ckpt_path": null,
+        "evaluate": false,
+        "train_splits": [
+            "train"
+        ],
+        "device": "cuda",
+        "world_size": 2,
+        "dist_url": "env://",
+        "distributed": true,
+        "rank": 0,
+        "gpu": 0,
+        "dist_backend": "nccl"
+    },
+    "model": {
+        "arch": "video_llama",
+        "image_size": 224,
+        "drop_path_rate": 0,
+        "use_grad_checkpoint": false,
+        "vit_precision": "fp16",
+        "freeze_vit": true,
+        "freeze_qformer": true,
+        "num_query_token": 32,
+        "llama_model": "./ckpt/llama-2-7b-chat-hf",
+        "prompt": "",
+        "model_type": "pretrain_vicuna",
+        "imagebind_ckpt_path": "./ckpt",
+        "ckpt": "./ckpt/videollama_video_audio_pretrain/checkpoint_49.pth",
+        "equip_audio_branch": true,
+        "frozen_llama_proj": false,
+        "frozen_video_Qformer": false,
+        "frozen_audio_Qformer": false,
+        "frozen_llama": true,
+        "fusion_head_layers": 2,
+        "max_frame_pos": 32,
+        "fusion_header_type": "seqTransf",
+        "max_txt_len": 320,
+        "enabled_lora": true,
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "dynamic_connector": true
+    },
+    "preprocess": {
+        "vis_processor": {
+            "train": {
+                "name": "alpro_video_train",
+                "image_size": 224,
+                "n_frms": 8
+            },
+            "eval": {
+                "name": "alpro_video_eval",
+                "image_size": 224,
+                "n_frms": 8
+            }
+        },
+        "text_processor": {
+            "train": {
+                "name": "blip_caption"
+            },
+            "eval": {
+                "name": "blip_caption"
+            }
+        }
+    },
+    "datasets": {
+        "my_dataset_instruct": {
+            "data_type": "video",
+            "build_info": {
+                "anno_dir": "./datasets/AV-TAU/annotations/sft_formatted_test.json",
+                "videos_dir": "./datasets/AV-TAU/"
+            },
+            "vis_processor": {
+                "train": {
+                    "name": "alpro_video_train",
+                    "n_frms": 8,
+                    "image_size": 224
+                }
+            },
+            "text_processor": {
+                "train": {
+                    "name": "blip_caption"
+                }
+            },
+            "num_video_query_token": 32,
+            "tokenizer_name": "ckpt/llama-2-7b-chat-hf",
+            "model_type": "llama_v2"
+        }
+    }
+}
+{
+    "run": {
+        "task": "video_text_pretrain",
+        "lr_sched": "linear_warmup_cosine_lr",
+        "init_lr": 2e-05,
+        "min_lr": 1e-10,
+        "warmup_lr": 1e-06,
+        "weight_decay": 0.0001,
+        "max_epoch": 1,
+        "batch_size_train": 1,
+        "accum_grad_iters": 2,
+        "batch_size_eval": 1,
+        "num_workers": 16,
+        "warmup_steps": 0,
+        "seed": 42,
+        "output_dir": "output/videollama_video_audio_pretrain_sft",
+        "amp": true,
+        "resume_ckpt_path": null,
+        "evaluate": false,
+        "train_splits": [
+            "train"
+        ],
+        "device": "cuda",
+        "world_size": 2,
+        "dist_url": "env://",
+        "distributed": true,
+        "rank": 0,
+        "gpu": 0,
+        "dist_backend": "nccl"
+    },
+    "model": {
+        "arch": "video_llama",
+        "image_size": 224,
+        "drop_path_rate": 0,
+        "use_grad_checkpoint": false,
+        "vit_precision": "fp16",
+        "freeze_vit": true,
+        "freeze_qformer": true,
+        "num_query_token": 32,
+        "llama_model": "./ckpt/llama-2-7b-chat-hf",
+        "prompt": "",
+        "model_type": "pretrain_vicuna",
+        "imagebind_ckpt_path": "./ckpt",
+        "ckpt": "./ckpt/videollama_video_audio_pretrain/checkpoint_49.pth",
+        "equip_audio_branch": true,
+        "frozen_llama_proj": false,
+        "frozen_video_Qformer": false,
+        "frozen_audio_Qformer": false,
+        "frozen_llama": true,
+        "fusion_head_layers": 2,
+        "max_frame_pos": 32,
+        "fusion_header_type": "seqTransf",
+        "max_txt_len": 320,
+        "enabled_lora": true,
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "dynamic_connector": true
+    },
+    "preprocess": {
+        "vis_processor": {
+            "train": {
+                "name": "alpro_video_train",
+                "image_size": 224,
+                "n_frms": 8
+            },
+            "eval": {
+                "name": "alpro_video_eval",
+                "image_size": 224,
+                "n_frms": 8
+            }
+        },
+        "text_processor": {
+            "train": {
+                "name": "blip_caption"
+            },
+            "eval": {
+                "name": "blip_caption"
+            }
+        }
+    },
+    "datasets": {
+        "my_dataset_instruct": {
+            "data_type": "video",
+            "build_info": {
+                "anno_dir": "./datasets/AV-TAU/annotations/sft_formatted_test.json",
+                "videos_dir": "./datasets/AV-TAU/"
+            },
+            "vis_processor": {
+                "train": {
+                    "name": "alpro_video_train",
+                    "n_frms": 8,
+                    "image_size": 224
+                }
+            },
+            "text_processor": {
+                "train": {
+                    "name": "blip_caption"
+                }
+            },
+            "num_video_query_token": 32,
+            "tokenizer_name": "ckpt/llama-2-7b-chat-hf",
+            "model_type": "llama_v2"
+        }
+    }
+}

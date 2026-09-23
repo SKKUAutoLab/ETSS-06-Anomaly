@@ -1,0 +1,1 @@
+python inference.py --video-path test_video/036680.mp4 --prompt "What unusual event takes place in the video?" --model-path ckpt/videollama_video_audio_sft/checkpoint_0.pth --cfg-path eval_configs/finetune_eval.yaml --gpu-id 0
