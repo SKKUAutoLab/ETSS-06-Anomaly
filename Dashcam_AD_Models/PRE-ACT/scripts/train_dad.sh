@@ -1,0 +1,4 @@
+export PYTHONPATH="$(pwd):${PYTHONPATH:-}"
+set -x
+model_id="videomae_large_unfreeze_4blocks_bce1_prog10_pref01_risk_exp_above3_head_v4_margin_ranking_seed42"
+torchrun --standalone --nproc_per_node=2 train_autoencoder_anticipation_ddp.py --num-workers 8 --batch-size 8 --root ./datasets/DAD --subset DAD --backbone-type videomae --backbone-name MCG-NJU/videomae-large --freeze-backbone --unfreeze-last-n-blocks 4 --backbone-lr 2e-5 --head-lr 2e-4 --lambda-bce 1.0 --lambda-prog 10.0 --lambda-pref 0.1 --custom_risk_mode "exp_above" --progress-alpha 3.0 --anticipation-horizon-sec 2.0 --snippet-len 5 --train-stride 5 --image-size 224 --epochs 30 --eval-every-n-epochs 1 --eval-mode sliding_window --eval-score-key score --eval-anno-json ./annotations/dad_anno.json --eval-batch-size 128 --save-eval-predictions --pref-loss-type "margin_ranking" --seed 42 --output-dir ./outputs_DAD/${model_id}
