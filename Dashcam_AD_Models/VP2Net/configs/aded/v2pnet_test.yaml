@@ -1,0 +1,22 @@
+Data:
+  data_root: dataset/ADED
+  train_list: lists/aded/untrimmed_16_training.txt
+  test_list: lists/aded/untrimmed_16_test.txt
+  classes: 6
+
+Train:
+  img_h: 192
+  img_w: 320
+  # Dataset
+  data_type: 'aded' # our dataset --> ['aded', 'dada', 'psad']. If you have new data, you can change it.
+  # Else
+  batch_size: 2 # batch size for testing
+  save_path: exp
+  workers: 8
+  manual_seed: 42
+
+Method:
+  model_name: 'vp2net'
+
+Test:
+  weight: 'train_temp.pth' # relative to exp/<data_type>/<model_name>/, or an absolute path
