@@ -1,0 +1,1 @@
+deepspeed --master_port=24999 train_ds.py --version="ckpts/LLaVA-7B-Lightening-v1-1" --vision-tower="ckpts/clip-vit-large-patch14" --dataset_dir="dataset" --log_base_dir="logs" --dataset="DReyeVE||LBW||DADA" --train_sample_rates="5,2,7" --exp_name="Attn-7b" --val_dataset="DReyeVE||LBW||DADA" --val_sample_rates="5,2,7"
