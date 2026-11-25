@@ -1,1 +1,0 @@
-python src/eval.py model=anomaly_clip_xdviolence data=xdviolence ckpt_path=checkpoints/xdviolence/last.ckpt
